@@ -1,0 +1,149 @@
+/* ZAJEDNIČKI NAVBAR ZA SVE STRANICE */
+.modern-navbar {
+    min-height: 88px;
+    padding: 9px 0;
+    background: #f7f5ef;
+    border-bottom: 1px solid #e4dfd3;
+    box-shadow: none;
+    z-index: 1030;
+}
+
+.modern-navbar .container {
+    min-height: 70px;
+}
+
+.modern-navbar .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    color: #153f48;
+    text-decoration: none;
+}
+
+.modern-navbar .brand-name {
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.modern-navbar .brand-sub {
+    margin-top: 7px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.57rem;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    color: #81856a;
+}
+
+.modern-navbar .navbar-nav {
+    align-items: center;
+    gap: 8px;
+}
+
+.modern-navbar .navbar-nav .nav-link {
+    position: relative;
+    padding: 12px 12px !important;
+    color: #394348;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+/* Jedinstvena crta za hover i aktivni gumb */
+.modern-navbar .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 3px;
+    height: 1px;
+    background-color: #d8c39b;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+/* Boja teksta pri prelasku i na aktivnoj stranici */
+.modern-navbar .navbar-nav .nav-link:hover,
+.modern-navbar .navbar-nav .nav-link.active {
+    color: #21616b !important;
+    font-weight: 700;
+}
+
+/* Ista animacija i duljina crte u oba stanja */
+.modern-navbar .navbar-nav .nav-link:hover::after,
+.modern-navbar .navbar-nav .nav-link.active::after {
+    transform: scaleX(1);
+}
+
+/* Gumb rezervacije */
+.modern-navbar .btn-nav-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 62px;
+    padding: 0 24px;
+    border: 1px solid #153f48;
+    border-radius: 2px;
+    background: #153f48;
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.modern-navbar .btn-nav-action:hover {
+    background: #d8c39b;
+    border-color: #d8c39b;
+    color: #0b2a31;
+}
+
+.modern-navbar .btn-nav-action i {
+    font-size: 1.15rem;
+}
+
+.modern-navbar .navbar-toggler {
+    color: #153f48;
+}
+
+@media (max-width: 991.98px) {
+    .modern-navbar {
+        padding: 10px 0;
+    }
+
+    .modern-navbar .navbar-collapse {
+        padding: 14px 0 18px;
+    }
+
+    .modern-navbar .navbar-nav {
+        align-items: stretch;
+        gap: 2px;
+    }
+
+    .modern-navbar .navbar-nav .nav-link {
+        padding: 12px 0 !important;
+    }
+
+    /* Na mobitelu crta ima jednaku duljinu pri hoveru i aktivnom stanju */
+    .modern-navbar .navbar-nav .nav-link::after {
+        left: 0;
+        right: auto;
+        width: 35px;
+        bottom: 5px;
+    }
+
+    .modern-navbar .nav-item.ms-lg-3 {
+        margin-left: 0 !important;
+    }
+
+    .modern-navbar .btn-nav-action {
+        min-height: 50px;
+        width: 100%;
+    }
+}
