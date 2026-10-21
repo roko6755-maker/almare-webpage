@@ -110,6 +110,7 @@
       "Natrag na vrh": "Back to top",
       "Murter, Hrvatska": "Murter, Croatia",
       "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. All rights reserved.",
+      "© 2026 Apartmani Al Mare. Sva prava pridržana.": "© 2026 Al Mare Apartments. All rights reserved.",
 
       "Pravne informacije": "Legal information",
       "Apartmani Al Mare · Murter": "Al Mare Apartments · Murter",
@@ -369,6 +370,7 @@
       "Natrag na vrh": "Zurück nach oben",
       "Murter, Hrvatska": "Murter, Kroatien",
       "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. Alle Rechte vorbehalten.",
+      "© 2026 Apartmani Al Mare. Sva prava pridržana.": "© 2026 Al Mare Apartments. Alle Rechte vorbehalten.",
 
       /* Galerija */
       "Istražite fotografije": "Fotos entdecken",
@@ -458,7 +460,8 @@
       "Lokacija | Apartmani Al Mare":
         "Lage | Apartments Al Mare",
       "Galerija | Apartmani Al Mare":
-        "Galerie | Apartments Al Mare"
+        "Galerie | Apartments Al Mare",
+      "Pravne informacije | Apartmani Al Mare": "Rechtliche Informationen | Apartments Al Mare"
     }
   };
 
