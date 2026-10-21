@@ -134,7 +134,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                             <i class="ri-arrow-right-line ms-2"></i>
                         </a>
 
-                        <a href="#kontakt" class="btn btn-luxury-outline">
+                        <a href="#kontakt-forma" class="btn btn-luxury-outline">
                             Pošaljite upit
                         </a>
                     </div>
@@ -280,7 +280,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
 
                     </div>
 
-                    <a href="#kontakt" class="btn btn-luxury-primary mt-4">
+                    <a href="#kontakt-forma" class="btn btn-luxury-primary mt-4">
                         Raspitajte se o terminima
                         <i class="ri-arrow-right-line ms-2"></i>
                     </a>
@@ -462,7 +462,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     apartmana za svoj sljedeći odmor.
                 </p>
 
-                <a href="#kontakt" class="btn btn-luxury-light">
+                <a href="#kontakt-forma" class="btn btn-luxury-light">
                     Dogovorimo vaš boravak
                     <i class="ri-arrow-right-up-line ms-2"></i>
                 </a>
@@ -495,30 +495,6 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                         slobodnim terminima? Pošaljite nam upit.
                         Rado ćemo vam pomoći pri planiranju odmora.
                     </p>
-
-                    <div class="contact-detail">
-                        <i class="ri-mail-line"></i>
-                        <div>
-                            <h3>E-mail</h3>
-                            <p>Ovdje upišite svoju e-mail adresu</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <i class="ri-phone-line"></i>
-                        <div>
-                            <h3>Telefon</h3>
-                            <p>Ovdje upišite svoj broj telefona</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <i class="ri-map-pin-line"></i>
-                        <div>
-                            <h3>Lokacija</h3>
-                            <p>Ovdje upišite mjesto u kojem se apartman nalazi</p>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -845,7 +821,56 @@ if (contactForm) {
     });
 }
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const bookingButtons = document.querySelectorAll(
+        'a[href="#kontakt-forma"].btn-luxury-outline, ' +
+        'a[href="#kontakt-forma"].btn-luxury-primary, ' +
+        'a[href="#kontakt-forma"].btn-luxury-light'
+    );
 
+    bookingButtons.forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const form = document.getElementById("kontakt-forma");
+            const navbarCollapse = document.getElementById("navbarNav");
+
+            if (!form) {
+                console.error("Nije pronađen obrazac #kontakt-forma.");
+                return;
+            }
+
+            function scrollToForm() {
+                form.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+                history.replaceState(null, "", "#kontakt-forma");
+            }
+
+            if (
+                window.innerWidth < 992 &&
+                navbarCollapse &&
+                navbarCollapse.classList.contains("show")
+            ) {
+                navbarCollapse.addEventListener(
+                    "hidden.bs.collapse",
+                    scrollToForm,
+                    { once: true }
+                );
+
+                bootstrap.Collapse
+                    .getOrCreateInstance(navbarCollapse)
+                    .hide();
+            } else {
+                scrollToForm();
+            }
+        });
+    });
+});
+</script>
 <script src="translations.js"></script>
 </body>
 </html>
