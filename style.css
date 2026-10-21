@@ -1534,3 +1534,62 @@ a {
 .navbar .nav-link.active::after {
     width: 100%;
 }
+
+
+#kontakt {
+    scroll-margin-top: 110px;
+}
+
+@media (max-width: 991.98px) {
+    #kontakt {
+        scroll-margin-top: 90px;
+    }
+}
+
+
+/* Izbornik jezika – mala zastava lijevo od oznake */
+.almare-language-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 4px;
+    border: none;
+    background: transparent;
+    color: var(--med-plava);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.almare-language-flag {
+    display: block;
+    width: 16px;
+    height: 11px;
+    object-fit: cover;
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+.almare-language-label {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.almare-language-button:hover,
+.almare-language-button.active {
+    opacity: 1;
+}
+
+.almare-language-separator {
+    display: inline;
+    opacity: 0.4;
+    font-size: 0.75rem;
+}
