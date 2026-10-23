@@ -448,12 +448,8 @@
       "Lokacija | Apartmani Al Mare":
         "Location | Mobile Home Al Mare",
       "Galerija | Apartmani Al Mare":
-<<<<<<< Updated upstream
         "Gallery | Al Mare Apartments",
       "Pravne informacije | Apartmani Al Mare": "Legal information | Al Mare Apartments"
-=======
-        "Gallery | Mobile Home Al Mare"
->>>>>>> Stashed changes
     },
     de: {
       "Mobilna kućica Al Mare | Mediteranski odmor uz Jadran":
@@ -461,12 +457,8 @@
       "Lokacija | Apartmani Al Mare":
         "Lage | Mobilheim Al Mare",
       "Galerija | Apartmani Al Mare":
-<<<<<<< Updated upstream
         "Galerie | Apartments Al Mare",
       "Pravne informacije | Apartmani Al Mare": "Rechtliche Informationen | Apartments Al Mare"
-=======
-        "Galerie | Mobilheim Al Mare"
->>>>>>> Stashed changes
     }
   };
 
