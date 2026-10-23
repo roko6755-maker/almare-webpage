@@ -1,11 +1,11 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pravne informacije | Apartmani Al Mare</title>
+    <title>Pravne informacije | Mobilna kućica Al Mare</title>
     <meta name="description"
           content="Politika privatnosti, informacije o kolačićima i autorskim pravima za Apartmani Al Mare.">
 
@@ -106,6 +106,32 @@
                 padding-top: 30px;
             }
         }
+        .language-btn {
+    border: 1px solid #d4c5a2;
+    border-radius: 4px;
+    padding: 5px 9px;
+    background: transparent;
+    color: #173d4b;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.language-btn:hover,
+.language-btn.active {
+    background: #173d4b;
+    color: #fffefa;
+}
+
+.legal-language-content[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    .language-switcher {
+        padding: 10px 0;
+    }
+}
     </style>
 </head>
 
@@ -155,11 +181,16 @@
                         </a>
                     </li>
                 </ul>
+                <div class="language-switcher ms-lg-3 d-flex gap-2">
+    <button type="button" class="language-btn active" data-lang="hr">HR</button>
+    <button type="button" class="language-btn" data-lang="en">EN</button>
+</div>
             </div>
         </div>
     </nav>
 
     <!-- NASLOV -->
+     <div class="legal-language-content" data-content="hr"></div>
     <header class="legal-hero">
         <div class="container">
             <p class="eyebrow">Apartmani Al Mare · Murter</p>
@@ -176,7 +207,7 @@
         <p class="legal-date">
             Zadnje ažuriranje: 21. listopada 2026.
         </p>
-
+</div>
         <!-- 1. PODACI O IZNAMLJIVAČU -->
         <section class="legal-section" id="iznajmljivac">
             <h2>1. Podaci o iznajmljivaču</h2>
@@ -378,6 +409,197 @@
 
     </main>
 
+<div class="legal-language-content" data-content="en" hidden>
+
+    <header class="legal-hero">
+        <div class="container">
+            <p class="eyebrow">Apartmani Al Mare · Murter</p>
+            <h1>Legal Information</h1>
+            <p class="mb-0">
+                Information about privacy, cookies and the use of content
+                on this website.
+            </p>
+        </div>
+    </header>
+
+    <main class="legal-content">
+
+        <p class="legal-date">Last updated: 21 October 2026.</p>
+
+        <section class="legal-section" id="provider-en">
+            <h2>1. Accommodation Provider</h2>
+            <p>
+                This website presents accommodation operating under the name
+                Apartmani Al Mare. Enquiries about stays are submitted through
+                the contact form, while details and any reservation are agreed
+                upon subsequently with the accommodation provider.
+            </p>
+            <ul>
+                <li><strong>Status:</strong> Private accommodation provider – individual</li>
+                <li><strong>Name:</strong> Zoran Garma</li>
+                <li><strong>Phone:</strong>
+                    <a href="tel:+385911923895">+385 91 192 3895</a>
+                </li>
+                <li><strong>Address:</strong> [TO BE COMPLETED before publication]</li>
+                <li><strong>Email:</strong> [TO BE COMPLETED before publication]</li>
+            </ul>
+            <div class="legal-note">
+                Before publishing, complete the missing details and check
+                which accommodation-provider information must be disclosed
+                under the rules applicable to your business.
+            </div>
+        </section>
+
+        <section class="legal-section" id="privacy-en">
+            <h2>2. Privacy Policy</h2>
+
+            <h3>Data Controller</h3>
+            <p>
+                The data controller is Zoran Garma, a private accommodation
+                provider operating under the name Apartmani Al Mare.
+                Privacy contact: [ADD email address].
+            </p>
+
+            <h3>What information may we collect?</h3>
+            <p>
+                When you send an accommodation enquiry, we may process the
+                information you enter in the form, such as your name, email
+                address, telephone number if provided, preferred stay dates,
+                number of guests and message content.
+            </p>
+
+            <h3>Why do we process your information?</h3>
+            <p>
+                We use your information to respond to your enquiry, check
+                accommodation availability and discuss the conditions of a
+                potential stay. If a reservation is agreed, certain information
+                may also be processed to comply with legal obligations.
+            </p>
+
+            <h3>Legal Basis</h3>
+            <p>
+                Where the conditions are met, information necessary to respond
+                to an enquiry and take steps before entering into a contract
+                is processed under Article 6(1)(b) of the General Data
+                Protection Regulation (GDPR). Other purposes require an
+                appropriate legal basis.
+            </p>
+
+            <h3>How long do we retain your information?</h3>
+            <p>
+                Information is retained only for as long as necessary to handle
+                the enquiry and related communication. If a reservation is made,
+                certain information may be retained longer where required by law
+                or necessary for legal claims. Actual retention periods should
+                be determined according to the way the service operates and
+                applicable legal requirements.
+            </p>
+
+            <h3>Recipients and technical processing</h3>
+            <p>
+                The accommodation provider has access to the information.
+                If hosting, email or other service providers process personal
+                data, such processing must comply with applicable data
+                protection requirements.
+            </p>
+            <p>
+                This website is published through GitHub Pages. Before
+                publication, the data potentially processed by the hosting
+                provider and other external services, including any
+                international data transfers, should be reviewed and
+                accurately described.
+            </p>
+
+            <h3>Your Rights</h3>
+            <p>
+                Depending on the circumstances, you may request access to,
+                rectification, erasure or restriction of processing of your
+                personal data and exercise other rights available under the
+                GDPR. Send requests to: [ADD email address].
+            </p>
+            <p>
+                If you believe that your data is being processed unlawfully,
+                you may lodge a complaint with the Croatian Personal Data
+                Protection Agency (AZOP):
+                <a href="https://azop.hr/" target="_blank"
+                   rel="noopener noreferrer">azop.hr</a>.
+            </p>
+
+            <h3>Data Security</h3>
+            <p>
+                Appropriate measures are taken to protect personal data.
+                The adequacy of these measures should be assessed against the
+                actual methods used to collect, transmit and store information.
+            </p>
+        </section>
+
+        <section class="legal-section" id="cookies-en">
+            <h2>3. Cookies and Similar Technologies</h2>
+            <p>
+                Cookies are small files that a website may store on your
+                device. They can support essential website functions, remember
+                preferences, or be used for analytics and advertising.
+            </p>
+            <p>
+                An initial review has not confirmed the use of analytics or
+                marketing cookies. However, this does not conclusively establish
+                that such cookies are absent from every page or under all
+                conditions of use.
+            </p>
+            <p>
+                Cookies, local storage and external scripts should be checked
+                across all pages before publication. Technologies that legally
+                require prior consent must not be activated before valid consent
+                has been obtained.
+            </p>
+            <p>
+                This section should be updated after a technical review to
+                accurately reflect the website's actual configuration.
+            </p>
+        </section>
+
+        <section class="legal-section" id="reservations-en">
+            <h2>4. Enquiries and Arrangements for Stays</h2>
+            <p>
+                Submitting the contact form is an accommodation enquiry and
+                does not by itself mean that a reservation has been confirmed.
+                Availability, price, payment terms, length of stay and any
+                cancellation conditions are agreed upon subsequently with
+                the accommodation provider.
+            </p>
+            <p>
+                Specific stay conditions must be clearly communicated to the
+                guest before an agreement is concluded. This section does not
+                replace individual reservation terms or mandatory information
+                applicable to accommodation services.
+            </p>
+        </section>
+
+        <section class="legal-section" id="copyright-en">
+            <h2>5. Copyright</h2>
+            <p>
+                Text, design and other content on this website may be protected
+                by copyright or other intellectual property rights.
+            </p>
+            <p>
+                Photographs and materials belonging to third parties may be
+                subject to separate rights and licences. They may only be used,
+                downloaded or republished where an appropriate legal basis or
+                permission exists.
+            </p>
+            <p>
+                © 2026 Apartmani Al Mare. All rights reserved to the extent
+                that the relevant rights belong to the respective rights holder.
+            </p>
+        </section>
+
+        <a class="legal-back" href="index.html">
+            <i class="ri-arrow-left-line"></i>
+            Back to Homepage
+        </a>
+
+    </main>
+</div>
     <!-- PODNOŽJE -->
     <footer class="site-footer" id="footer">
         <div class="container">
@@ -423,3 +645,4 @@
     <script src="translations.js"></script>
 </body>
 </html>
+

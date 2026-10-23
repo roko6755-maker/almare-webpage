@@ -1,5 +1,4 @@
-
-/* =========================================================
+﻿/* =========================================================
    APARTMANI AL MARE
    Jezici: hrvatski (HR), engleski (EN), njemački (DE)
    Pamti jezik pri prelasku između stranica.
@@ -11,12 +10,12 @@
   const dictionaries = {
     en: {
       "Početna": "Home",
-      "Apartman": "Apartment",
+      "Mobilna kućica": "Mobile Home",
       "Galerija": "Gallery",
       "Lokacija": "Location",
       "Kontakt": "Contact",
       "Rezervirajte boravak": "Book your stay",
-      "Otkrijte apartman": "Discover the apartment",
+      "Otkrijte apartman": "Discover the mobile home",
       "Pošaljite upit": "Send an enquiry",
       "VAŠ MALI KUTAK MEDITERANA": "YOUR LITTLE MEDITERRANEAN ESCAPE",
       "Vaš odmor počinje ovdje.": "Your holiday starts here.",
@@ -24,17 +23,15 @@
         "Welcome to Al Mare, where Dalmatian charm meets comfort and every day brings the scent of the sea, sunshine and a truly relaxing holiday.",
       "DALMACIJA · MURTER": "DALMATIA · MURTER",
       "OTKRIJTE VIŠE": "DISCOVER MORE",
-      "Jedan poseban apartman": "A special place to stay",
+      "Jedan poseban apartman": "One special mobile home",
       "Mediteranski ugođaj": "Mediterranean atmosphere",
       "Odmor po vašoj mjeri": "A holiday your way",
       "Blizu ljepota Jadrana": "Close to the beauty of the Adriatic",
-      "Cijena od": "From",
-      "80 € / noć": "€80 / night",
       "VAŠ DOM NA ODMORU": "YOUR HOLIDAY HOME",
       "Malo mediteranske čarolije, puno trenutaka za pamćenje.":
         "A little Mediterranean magic, a lifetime of memories.",
       "Apartman Al Mare osmišljen je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
-        "Apartment Al Mare is designed for those who want to unwind, enjoy comfort and experience the beauty of the Adriatic.",
+        "Mobile Home Al Mare is designed for those who want to unwind, enjoy comfort and experience the beauty of the Adriatic.",
       "Uživajte u ugodnom ambijentu, opuštenoj atmosferi i detaljima inspiriranima Mediteranom. Bilo da planirate obiteljski odmor ili nekoliko dana daleko od svakodnevice, Al Mare pruža prostor za vaše najljepše ljetne uspomene.":
         "Enjoy a welcoming atmosphere, a relaxed setting and details inspired by the Mediterranean. Whether you are planning a family holiday or a few days away from everyday life, Al Mare offers the perfect setting for your most beautiful summer memories.",
       "Klimatizacija": "Air conditioning",
@@ -60,13 +57,13 @@
         "Enjoy peaceful evenings, delicious food and moments that will make you want to return.",
       "ZAVIRITE UNUTRA": "TAKE A LOOK INSIDE",
       "Upoznajte Al Mare.": "Get to know Al Mare.",
-      "Pogledajte fotografiju apartmana": "View the apartment photo",
+      "Pogledajte fotografiju apartmana": "View the mobile home photo",
       "Pogledajte fotografiju spavaće sobe": "View the bedroom photo",
       "Pogledajte fotografiju kuhinje": "View the kitchen photo",
       "Pogledajte fotografiju terase": "View the terrace photo",
-      "Dnevni prostor apartmana": "Apartment living area",
+      "Dnevni prostor apartmana": "Mobile home living area",
       "Spavaća soba": "Bedroom",
-      "Kuhinja apartmana": "Apartment kitchen",
+      "Kuhinja apartmana": "Mobile home kitchen",
       "Kamin": "Fireplace",
       "Prostor za opuštanje": "A space to unwind",
       "Mir i udobnost": "Peace and comfort",
@@ -76,18 +73,18 @@
       "More zove.": "The sea is calling.",
       "Hoćete li se javiti?": "Will you answer?",
       "Javite nam se i raspitajte se o dostupnosti apartmana za svoj sljedeći odmor.":
-        "Get in touch to ask about apartment availability for your next holiday.",
+        "Get in touch to ask about mobile home availability for your next holiday.",
       "Dogovorimo vaš boravak": "Let's plan your stay",
       "JAVITE NAM SE": "GET IN TOUCH",
       "Vaše mjesto uz more vas čeka.": "Your place by the sea is waiting for you.",
       "Imate pitanje o apartmanu, cijenama ili slobodnim terminima? Pošaljite nam upit. Rado ćemo vam pomoći pri planiranju odmora.":
-        "Have a question about the apartment, prices or availability? Send us an enquiry. We will be happy to help you plan your holiday.",
+        "Have a question about the mobile home, prices or availability? Send us an enquiry. We will be happy to help you plan your holiday.",
       "E-mail": "Email",
       "Telefon": "Phone",
       "Lokacija": "Location",
       "Ovdje upišite svoju e-mail adresu": "Enter your email address here",
       "Ovdje upišite svoj broj telefona": "Enter your phone number here",
-      "Ovdje upišite mjesto u kojem se apartman nalazi": "Enter the apartment's location here",
+      "Ovdje upišite mjesto u kojem se apartman nalazi": "Enter the mobile home location here",
       "Pošaljite upit za boravak": "Send a stay enquiry",
       "Ispunite podatke i javite nam kada biste željeli posjetiti Al Mare.":
         "Fill in your details and let us know when you would like to visit Al Mare.",
@@ -209,10 +206,10 @@
       /* Galerija */
       "Istražite fotografije": "Explore the photos",
       "Svaki kutak ima svoju priču.": "Every corner has a story.",
-      "Od udobnog interijera do ljetnih večeri na otvorenom — pogledajte Apartman Al Mare izbliza.":
-        "From a comfortable interior to summer evenings outdoors, take a closer look at Apartment Al Mare.",
+      "Od udobnog interijera do ljetnih večeri na otvorenom — pogledajte mobilnu kućicu Al Mare izbliza.":
+        "From a comfortable interior to summer evenings outdoors, take a closer look at Mobile Home Al Mare.",
       "VRIJEME JE ZA ODMOR": "TIME FOR A HOLIDAY",
-      "Naš apartman kroz fotografije.": "Our apartment in pictures.",
+      "Naš apartman kroz fotografije.": "Our mobile home in pictures.",
       "Upoznajte prostor u kojem ćete odmarati i otkrijte ljepote koje vas čekaju na Jadranu.":
         "Discover the space where you will unwind and explore the beauty awaiting you on the Adriatic.",
       "Sve": "All",
@@ -223,7 +220,7 @@
       "Sobe": "Bedrooms",
       "Obala": "Coast",
       "Sve fotografije": "All photos",
-      "Galerija apartmana": "Apartment gallery",
+      "Galerija apartmana": "Mobile Home Gallery",
       "Pogledajte galeriju": "View the gallery",
       "Javite nam se i raspitajte se o slobodnim terminima.":
         "Contact us to ask about available dates.",
@@ -272,20 +269,20 @@
 
     de: {
       "Početna": "Startseite",
-      "Apartman": "Ferienwohnung",
+      "Mobilna kućica": "Mobilheim",
       "Galerija": "Galerie",
       "Lokacija": "Lage",
       "Kontakt": "Kontakt",
       "Rezervirajte boravak": "Aufenthalt buchen",
-      "Otkrijte apartman": "Apartment entdecken",
+      "Otkrijte apartman": "Mobilheim entdecken",
       "Pošaljite upit": "Anfrage senden",
       "VAŠ MALI KUTAK MEDITERANA": "IHR KLEINES MEDITERRANES PARADIES",
       "Vaš odmor počinje ovdje.": "Ihr Urlaub beginnt hier.",
       "Dobro došli u Al Mare, mjesto gdje se dalmatinski šarm susreće s udobnošću i gdje svaki dan miriše na more, sunce i pravi odmor.":
-        "Willkommen in Al Mare, wo dalmatischer Charme auf Komfort trifft und jeder Tag nach Meer, Sonne und Erholung duftet.",
+        "Willkommen im Mobilheim Al Mare, wo dalmatinischer Charme auf Komfort trifft und jeder Tag nach Meer, Sonne und Erholung duftet.",
       "DALMACIJA · MURTER": "DALMATIEN · MURTER",
       "OTKRIJTE VIŠE": "MEHR ENTDECKEN",
-      "Jedan poseban apartman": "Ein besonderes Apartment",
+      "Jedan poseban apartman": "Ein besonderes Mobilheim",
       "Mediteranski ugođaj": "Mediterranes Ambiente",
       "Odmor po vašoj mjeri": "Urlaub nach Ihren Wünschen",
       "Blizu ljepota Jadrana": "Nahe der Schönheit der Adria",
@@ -295,7 +292,7 @@
       "Malo mediteranske čarolije, puno trenutaka za pamćenje.":
         "Ein wenig mediterrane Magie, viele unvergessliche Momente.",
       "Apartman Al Mare osmišljen je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
-        "Das Apartment Al Mare ist für alle gedacht, die eine Auszeit nehmen, Komfort genießen und die Schönheit der Adria erleben möchten.",
+        "Das Mobilheim Al Mare ist für alle gedacht, die eine Auszeit nehmen, Komfort genießen und die Schönheit der Adria erleben möchten.",
       "Uživajte u ugodnom ambijentu, opuštenoj atmosferi i detaljima inspiriranima Mediteranom. Bilo da planirate obiteljski odmor ili nekoliko dana daleko od svakodnevice, Al Mare pruža prostor za vaše najljepše ljetne uspomene.":
         "Genießen Sie das angenehme Ambiente, die entspannte Atmosphäre und die vom Mittelmeer inspirierten Details. Ob Sie einen Familienurlaub oder ein paar Tage fernab vom Alltag planen – Al Mare bietet den perfekten Rahmen für Ihre schönsten Sommererinnerungen.",
       "Klimatizacija": "Klimaanlage",
@@ -321,13 +318,13 @@
         "Genießen Sie ruhige Abende, gutes Essen und Momente, die Lust auf eine Rückkehr machen.",
       "ZAVIRITE UNUTRA": "WERFEN SIE EINEN BLICK HINEIN",
       "Upoznajte Al Mare.": "Lernen Sie Al Mare kennen.",
-      "Pogledajte fotografiju apartmana": "Apartmentfoto ansehen",
+      "Pogledajte fotografiju apartmana": "Foto des Mobilheims ansehen",
       "Pogledajte fotografiju spavaće sobe": "Schlafzimmerfoto ansehen",
       "Pogledajte fotografiju kuhinje": "Küchenfoto ansehen",
       "Pogledajte fotografiju terase": "Terrassenfoto ansehen",
-      "Dnevni prostor apartmana": "Wohnbereich des Apartments",
+      "Dnevni prostor apartmana": "Wohnbereich des Mobilheims",
       "Spavaća soba": "Schlafzimmer",
-      "Kuhinja apartmana": "Küche des Apartments",
+      "Kuhinja apartmana": "Küche des Mobilheims",
       "Kamin": "Kamin",
       "Prostor za opuštanje": "Ein Ort zum Entspannen",
       "Mir i udobnost": "Ruhe und Komfort",
@@ -337,17 +334,17 @@
       "More zove.": "Das Meer ruft.",
       "Hoćete li se javiti?": "Gehen Sie ran?",
       "Javite nam se i raspitajte se o dostupnosti apartmana za svoj sljedeći odmor.":
-        "Kontaktieren Sie uns und fragen Sie nach der Verfügbarkeit für Ihren nächsten Urlaub.",
+        "Kontaktieren Sie uns und fragen Sie nach der Verfügbarkeit unseres Mobilheims für Ihren nächsten Urlaub.",
       "Dogovorimo vaš boravak": "Planen wir Ihren Aufenthalt",
       "JAVITE NAM SE": "KONTAKTIEREN SIE UNS",
       "Vaše mjesto uz more vas čeka.": "Ihr Platz am Meer wartet auf Sie.",
       "Imate pitanje o apartmanu, cijenama ili slobodnim terminima? Pošaljite nam upit. Rado ćemo vam pomoći pri planiranju odmora.":
-        "Haben Sie Fragen zum Apartment, zu den Preisen oder zur Verfügbarkeit? Senden Sie uns eine Anfrage. Wir helfen Ihnen gerne bei der Planung Ihres Urlaubs.",
+        "Haben Sie Fragen zum Mobilheim, zu den Preisen oder zur Verfügbarkeit? Senden Sie uns eine Anfrage. Wir helfen Ihnen gerne bei der Planung Ihres Urlaubs.",
       "E-mail": "E-Mail",
       "Telefon": "Telefon",
       "Ovdje upišite svoju e-mail adresu": "Geben Sie hier Ihre E-Mail-Adresse ein",
       "Ovdje upišite svoj broj telefona": "Geben Sie hier Ihre Telefonnummer ein",
-      "Ovdje upišite mjesto u kojem se apartman nalazi": "Geben Sie hier den Standort des Apartments ein",
+      "Ovdje upišite mjesto u kojem se apartman nalazi": "Geben Sie hier den Standort des Mobilheims ein",
       "Pošaljite upit za boravak": "Anfrage zum Aufenthalt senden",
       "Ispunite podatke i javite nam kada biste željeli posjetiti Al Mare.":
         "Füllen Sie die Angaben aus und teilen Sie uns mit, wann Sie Al Mare besuchen möchten.",
@@ -376,9 +373,9 @@
       "Istražite fotografije": "Fotos entdecken",
       "Svaki kutak ima svoju priču.": "Jede Ecke erzählt ihre eigene Geschichte.",
       "Od udobnog interijera do ljetnih večeri na otvorenom — pogledajte Apartman Al Mare izbliza.":
-        "Vom gemütlichen Innenbereich bis zu Sommerabenden im Freien – entdecken Sie das Apartment Al Mare aus nächster Nähe.",
+        "Vom gemütlichen Innenbereich bis zu Sommerabenden im Freien – entdecken Sie das Mobilheim Al Mare aus nächster Nähe.",
       "VRIJEME JE ZA ODMOR": "ZEIT FÜR URLAUB",
-      "Naš apartman kroz fotografije.": "Unser Apartment in Bildern.",
+      "Naš apartman kroz fotografije.": "Unser Mobilheim in Bildern.",
       "Upoznajte prostor u kojem ćete odmarati i otkrijte ljepote koje vas čekaju na Jadranu.":
         "Entdecken Sie den Ort, an dem Sie sich erholen werden, und erleben Sie die Schönheiten, die Sie an der Adria erwarten.",
       "Sve": "Alle",
@@ -389,7 +386,7 @@
       "Sobe": "Schlafzimmer",
       "Obala": "Küste",
       "Sve fotografije": "Alle Fotos",
-      "Galerija apartmana": "Apartmentgalerie",
+      "Galerija apartmana": "Mobilheim-Galerie",
       "Pogledajte galeriju": "Galerie ansehen",
       "Javite nam se i raspitajte se o slobodnim terminima.":
         "Kontaktieren Sie uns und fragen Sie nach freien Terminen.",
@@ -447,27 +444,35 @@
   const pageTitles = {
     en: {
       "Mobilna kućica Al Mare | Mediteranski odmor uz Jadran":
-        "Al Mare | Mediterranean Holiday on the Adriatic",
+        "Mobile Home Al Mare | Mediterranean Holiday on the Adriatic",
       "Lokacija | Apartmani Al Mare":
-        "Location | Al Mare Apartments",
+        "Location | Mobile Home Al Mare",
       "Galerija | Apartmani Al Mare":
+<<<<<<< Updated upstream
         "Gallery | Al Mare Apartments",
       "Pravne informacije | Apartmani Al Mare": "Legal information | Al Mare Apartments"
+=======
+        "Gallery | Mobile Home Al Mare"
+>>>>>>> Stashed changes
     },
     de: {
       "Mobilna kućica Al Mare | Mediteranski odmor uz Jadran":
-        "Al Mare | Mediterraner Urlaub an der Adria",
+        "Mobilheim Al Mare | Mediterraner Urlaub an der Adria",
       "Lokacija | Apartmani Al Mare":
-        "Lage | Apartments Al Mare",
+        "Lage | Mobilheim Al Mare",
       "Galerija | Apartmani Al Mare":
+<<<<<<< Updated upstream
         "Galerie | Apartments Al Mare",
       "Pravne informacije | Apartmani Al Mare": "Rechtliche Informationen | Apartments Al Mare"
+=======
+        "Galerie | Mobilheim Al Mare"
+>>>>>>> Stashed changes
     }
   };
 
   const descriptions = {
-    en: "Discover Apartment Al Mare, your Mediterranean retreat for relaxation and enjoying the Adriatic. Send an enquiry to plan your stay.",
-    de: "Entdecken Sie das Apartment Al Mare – Ihren mediterranen Rückzugsort zum Entspannen und Genießen der Adria. Senden Sie eine Anfrage für Ihren Aufenthalt."
+    en: "Discover Mobile Home Al Mare, your Mediterranean retreat for relaxation and enjoying the Adriatic. Send an enquiry to plan your stay.",
+    de: "Entdecken Sie das Mobilheim Al Mare – Ihren mediterranen Rückzugsort zum Entspannen und Genießen der Adria. Senden Sie eine Anfrage für Ihren Aufenthalt."
   };
 
   function normalize(value) {
@@ -586,97 +591,97 @@
     updateActiveLanguage(language);
   }
 
-function addLanguageSwitcher() {
+  function addLanguageSwitcher() {
     const navbar = document.querySelector(".navbar-nav");
 
     if (!navbar) {
-        console.warn("Al Mare: nije pronađen element .navbar-nav.");
-        return;
+      console.warn("Al Mare: nije pronađen element .navbar-nav.");
+      return;
     }
 
     if (navbar.querySelector(".almare-language-item")) {
-        return;
+      return;
     }
 
     const languageItem = document.createElement("li");
 
     languageItem.className =
-        "nav-item almare-language-item d-flex align-items-center justify-content-center gap-1 ms-lg-3 my-2 my-lg-0";
+      "nav-item almare-language-item d-flex align-items-center justify-content-center gap-1 ms-lg-3 my-2 my-lg-0";
 
     const languages = [
-        {
-            code: "hr",
-            name: "Hrvatski",
-            flag: "https://flagcdn.com/w40/hr.png"
-        },
-        {
-            code: "en",
-            name: "English",
-            flag: "https://flagcdn.com/w40/gb.png"
-        },
-        {
-            code: "de",
-            name: "Deutsch",
-            flag: "https://flagcdn.com/w40/de.png"
-        }
+      {
+        code: "hr",
+        name: "Hrvatski",
+        flag: "https://flagcdn.com/w40/hr.png"
+      },
+      {
+        code: "en",
+        name: "English",
+        flag: "https://flagcdn.com/w40/gb.png"
+      },
+      {
+        code: "de",
+        name: "Deutsch",
+        flag: "https://flagcdn.com/w40/de.png"
+      }
     ];
 
     languages.forEach((language, index) => {
-        if (index > 0) {
-            const separator = document.createElement("span");
-            separator.className = "almare-language-separator";
-            separator.textContent = "|";
-            languageItem.appendChild(separator);
-        }
+      if (index > 0) {
+        const separator = document.createElement("span");
+        separator.className = "almare-language-separator";
+        separator.textContent = "|";
+        languageItem.appendChild(separator);
+      }
 
-        const button = document.createElement("button");
-        button.type = "button";
-        button.className = "almare-language-button";
-        button.dataset.almareLang = language.code;
-        button.setAttribute("aria-label", language.name);
-        button.setAttribute("title", language.name);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "almare-language-button";
+      button.dataset.almareLang = language.code;
+      button.setAttribute("aria-label", language.name);
+      button.setAttribute("title", language.name);
 
-        const flag = document.createElement("img");
-        flag.src = language.flag;
-        flag.alt = language.name;
-        flag.className = "almare-language-flag";
-        flag.width = 20;
-        flag.height = 14;
+      const flag = document.createElement("img");
+      flag.src = language.flag;
+      flag.alt = language.name;
+      flag.className = "almare-language-flag";
+      flag.width = 20;
+      flag.height = 14;
 
-         const label = document.createElement("span");
-label.className = "almare-language-label";
-label.textContent = language.code.toUpperCase();
+      const label = document.createElement("span");
+      label.className = "almare-language-label";
+      label.textContent = language.code.toUpperCase();
 
-button.appendChild(flag);
-button.appendChild(label)
-         languageItem.appendChild(button);
+      button.appendChild(flag);
+      button.appendChild(label);
+      languageItem.appendChild(button);
     });
 
     languageItem.addEventListener("click", event => {
-        const button = event.target.closest("button[data-almare-lang]");
+      const button = event.target.closest("button[data-almare-lang]");
 
-        if (!button) return;
+      if (!button) return;
 
-        setLanguage(button.dataset.almareLang);
+      setLanguage(button.dataset.almareLang);
 
-        const collapse = document.querySelector(".navbar-collapse");
+      const collapse = document.querySelector(".navbar-collapse");
 
-        if (collapse?.classList.contains("show") && window.bootstrap) {
-            window.bootstrap.Collapse
-                .getOrCreateInstance(collapse)
-                .hide();
-        }
+      if (collapse?.classList.contains("show") && window.bootstrap) {
+        window.bootstrap.Collapse
+          .getOrCreateInstance(collapse)
+          .hide();
+      }
     });
 
     const reservationLink = navbar.querySelector(".btn-nav-action");
     const reservationItem = reservationLink?.closest("li");
 
     if (reservationItem && reservationItem.parentElement === navbar) {
-        navbar.insertBefore(languageItem, reservationItem);
+      navbar.insertBefore(languageItem, reservationItem);
     } else {
-        navbar.appendChild(languageItem);
+      navbar.appendChild(languageItem);
     }
-}
+  }
 
   function addLanguageStyles() {
     if (document.getElementById("almare-language-styles")) return;
