@@ -716,8 +716,6 @@
     addLanguageStyles();
     addLanguageSwitcher();
 
-    const savedLanguage = localStorage.getItem("alMareLanguage") || "hr";
-
     setLanguage("hr");
   }
 
