@@ -1,0 +1,1614 @@
+/* ==========================================================================
+   APARTMAN AL MARE — MEDITERANSKI DIZAJN
+   ========================================================================== */
+
+:root {
+    --med-plava: #173d4b;
+    --more: #245d69;
+    --kamen: #f7f4ec;
+    --bijela: #fffefa;
+    --maslina: #68745b;
+    --pijesak: #c7a879;
+    --tekst: #354044;
+    --tekst-soft: #707a79;
+    --linija: rgba(23, 61, 75, 0.13);
+    --sjena: 0 18px 55px rgba(23, 61, 75, 0.10);
+    --padding-sekcija: clamp(70px, 8vw, 112px);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    color: var(--tekst);
+    background: var(--bijela);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, .brand-name, .footer-brand {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+a {
+    transition: color .25s ease, background-color .25s ease,
+                border-color .25s ease, transform .25s ease;
+}
+
+.section-padding {
+    padding-top: var(--padding-sekcija);
+    padding-bottom: var(--padding-sekcija);
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 18px;
+    color: var(--maslina);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: 2.6px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.section-badge > span {
+    display: inline-block;
+    width: 27px;
+    height: 1px;
+    background: var(--pijesak);
+}
+
+.section-title {
+    margin: 0 0 22px;
+    color: var(--med-plava);
+    font-size: clamp(2.15rem, 4vw, 3.55rem);
+    line-height: 1.15;
+    letter-spacing: -1.2px;
+}
+
+.section-lead {
+    color: var(--med-plava);
+    font-size: 1.13rem;
+    line-height: 1.85;
+}
+
+.section-description {
+    color: var(--tekst-soft);
+    line-height: 1.9;
+}
+
+/* ==========================================================================
+   NAVIGACIJA
+   ========================================================================== */
+
+.modern-navbar {
+    padding: 17px 0;
+    background: rgba(255, 254, 250, .94);
+    border-bottom: 1px solid rgba(23, 61, 75, .08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: padding .25s ease, box-shadow .25s ease;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-right: 28px;
+    color: var(--med-plava) !important;
+    line-height: 1;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+
+.brand-sub {
+    color: var(--maslina);
+    font-size: .56rem;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.modern-navbar .nav-link {
+    position: relative;
+    padding: 12px 13px !important;
+    color: var(--tekst) !important;
+    font-size: .82rem;
+    font-weight: 600;
+}
+
+.modern-navbar .nav-link::after {
+    position: absolute;
+    right: 13px;
+    bottom: 5px;
+    left: 13px;
+    height: 1px;
+    background: var(--pijesak);
+    content: "";
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.modern-navbar .nav-link:hover::after,
+.modern-navbar .nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.modern-navbar .nav-link:hover,
+.modern-navbar .nav-link.active {
+    color: var(--more) !important;
+}
+
+.btn-nav-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 17px;
+    border: 1px solid var(--med-plava);
+    border-radius: 2px;
+    background: var(--med-plava);
+    color: white !important;
+    font-size: .76rem;
+    font-weight: 700;
+}
+
+.btn-nav-action:hover {
+    background: transparent;
+    color: var(--med-plava) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ==========================================================================
+   NASLOVNA FOTOGRAFIJA / HERO
+   ========================================================================== */
+
+.hero-fullscreen {
+    position: relative;
+    display: flex;
+    min-height: 740px;
+    height: min(100svh, 960px);
+    align-items: center;
+    overflow: hidden;
+    background-color: #365b63;
+    /* Zamijeni vlastitom fotografijom ako je imaš */
+    background-image: url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=2200&q=85");
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(14, 39, 48, .76) 0%, rgba(14, 39, 48, .48) 52%, rgba(14, 39, 48, .12) 100%),
+        linear-gradient(0deg, rgba(14, 39, 48, .35), transparent 50%);
+}
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.hero-tagline {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 25px;
+    color: #ead8b9;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero-tagline-line {
+    display: inline-block;
+    width: 35px;
+    height: 1px;
+    background: var(--pijesak);
+}
+
+.main-title {
+    max-width: 900px;
+    margin: 0 0 25px;
+    color: #fffdf8;
+    font-size: clamp(3.2rem, 7vw, 6.7rem);
+    line-height: 1.02;
+    letter-spacing: -2.2px;
+}
+
+.main-title span {
+    display: block;
+    color: #e6d2ad;
+    font-style: italic;
+}
+
+.hero-desc {
+    max-width: 600px;
+    margin: 0 0 35px;
+    color: rgba(255, 255, 255, .88);
+    font-size: clamp(1rem, 1.4vw, 1.13rem);
+    line-height: 1.9;
+}
+
+.btn-luxury-primary,
+.btn-luxury-outline,
+.btn-luxury-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 23px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: 1.15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-luxury-primary {
+    background: var(--med-plava);
+    color: white;
+}
+
+.btn-luxury-primary:hover {
+    border-color: var(--more);
+    background: var(--more);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero-buttons .btn-luxury-primary {
+    border-color: #e2c69b;
+    background: #e2c69b;
+    color: var(--med-plava);
+}
+
+.hero-buttons .btn-luxury-primary:hover {
+    border-color: #f0dfc3;
+    background: #f0dfc3;
+}
+
+.btn-luxury-outline {
+    border-color: rgba(255, 255, 255, .72);
+    background: rgba(255, 255, 255, .04);
+    color: white;
+}
+
+.btn-luxury-outline:hover {
+    background: white;
+    color: var(--med-plava);
+}
+
+.hero-bottom-note {
+    position: absolute;
+    right: max(24px, calc((100vw - 1140px) / 2));
+    bottom: 35px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, .85);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-bottom-note i {
+    color: #e2c69b;
+    font-size: 1.2rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: .58rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transform: translateX(-50%);
+}
+
+.scroll-indicator i {
+    font-size: 1.15rem;
+    animation: gentle-bounce 1.8s infinite;
+}
+
+.scroll-indicator:hover {
+    color: #e2c69b;
+}
+
+@keyframes gentle-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
+
+/* ==========================================================================
+   TRAKA PREDNOSTI
+   ========================================================================== */
+
+.intro-strip {
+    padding: 27px 0;
+    border-bottom: 1px solid var(--linija);
+    background: var(--kamen);
+}
+
+.intro-strip .row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--med-plava);
+    font-size: .82rem;
+    font-weight: 600;
+}
+
+.intro-strip i {
+    color: var(--maslina);
+    font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   O APARTMANU
+   ========================================================================== */
+
+.section-details {
+    background: var(--bijela);
+}
+
+.apartment-showcase-img {
+    position: relative;
+    padding: 0 22px 22px 0;
+}
+
+.apartment-showcase-img::before {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    z-index: 0;
+    border: 1px solid #d9c6a8;
+    content: "";
+}
+
+.apartment-showcase-img img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 560px;
+    border-radius: 2px;
+    object-fit: cover;
+    box-shadow: var(--sjena);
+}
+
+.price-badge-floating {
+    position: absolute;
+    right: -5px;
+    bottom: 45px;
+    z-index: 2;
+    min-width: 160px;
+    padding: 19px 23px;
+    background: var(--med-plava);
+    box-shadow: var(--sjena);
+    color: white;
+    text-align: center;
+}
+
+.badge-label {
+    display: block;
+    margin-bottom: 3px;
+    color: #e2c69b;
+    font-size: .67rem;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.badge-amount {
+    font-family: "Playfair Display", serif;
+    font-size: 1.65rem;
+    white-space: nowrap;
+}
+
+.amenities-grid-luxury {
+    margin-top: 28px;
+}
+
+.amenity-item-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+}
+
+.amenity-item-box > i {
+    display: flex;
+    width: 47px;
+    min-width: 47px;
+    height: 47px;
+    align-items: center;
+    justify-content: center;
+    background: var(--kamen);
+    color: var(--maslina);
+    font-size: 1.4rem;
+}
+
+.amenity-item-box h3 {
+    margin: 0 0 3px;
+    color: var(--med-plava);
+    font-family: "DM Sans", sans-serif;
+    font-size: .91rem;
+    font-weight: 700;
+}
+
+.amenity-item-box p {
+    margin: 0;
+    color: var(--tekst-soft);
+    font-size: .76rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   DOŽIVLJAJ
+   ========================================================================== */
+
+.experience-section {
+    background: var(--kamen);
+}
+
+.experience-heading {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.experience-heading > p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--tekst-soft);
+}
+
+.experience-card {
+    height: 100%;
+    padding: 36px 30px;
+    border: 1px solid rgba(23, 61, 75, .09);
+    background: var(--bijela);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sjena);
+}
+
+.experience-icon {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    background: #eae9de;
+    color: var(--maslina);
+    font-size: 1.65rem;
+}
+
+.experience-card h3 {
+    margin-bottom: 12px;
+    color: var(--med-plava);
+    font-size: 1.45rem;
+}
+
+.experience-card p {
+    margin: 0;
+    color: var(--tekst-soft);
+    font-size: .92rem;
+    line-height: 1.85;
+}
+
+/* ==========================================================================
+   GALERIJA
+   ========================================================================== */
+
+.gallery-section {
+    background: var(--bijela);
+}
+
+.gallery-heading {
+    margin-bottom: 35px;
+}
+
+.gallery-heading > p {
+    max-width: 300px;
+    margin-bottom: 8px;
+    color: var(--tekst-soft);
+}
+
+.gallery-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #e7e3d8;
+    color: white;
+    text-decoration: none;
+}
+
+.gallery-large {
+    height: 390px;
+}
+
+.gallery-small {
+    height: 300px;
+}
+
+.gallery-item::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(10, 32, 39, .66), transparent 58%);
+    content: "";
+    transition: background .3s ease;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .55s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.045);
+}
+
+.gallery-item:hover::after {
+    background: linear-gradient(0deg, rgba(10, 32, 39, .78), rgba(10, 32, 39, .04) 75%);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 22px;
+    left: 24px;
+    z-index: 1;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+}
+
+/* ==========================================================================
+   POZIV NA REZERVACIJU
+   ========================================================================== */
+
+.booking-banner {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(65px, 8vw, 100px) 0;
+    background:
+        radial-gradient(ellipse at top right, rgba(255,255,255,.08), transparent 42%),
+        var(--med-plava);
+    color: white;
+}
+
+.booking-banner::before,
+.booking-banner::after {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border: 1px solid rgba(255, 255, 255, .09);
+    border-radius: 50%;
+    content: "";
+}
+
+.booking-banner::before {
+    top: -130px;
+    left: -90px;
+}
+
+.booking-banner::after {
+    right: -100px;
+    bottom: -160px;
+    width: 360px;
+    height: 360px;
+}
+
+.booking-banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.booking-eyebrow {
+    display: block;
+    margin-bottom: 18px;
+    color: #e2c69b;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.booking-banner h2 {
+    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.12;
+}
+
+.booking-banner h2 span {
+    display: block;
+    color: #e2c69b;
+    font-style: italic;
+}
+
+.booking-banner p {
+    max-width: 570px;
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.btn-luxury-light {
+    background: #e2c69b;
+    color: var(--med-plava);
+}
+
+.btn-luxury-light:hover {
+    background: white;
+    color: var(--med-plava);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   KONTAKT
+   ========================================================================== */
+
+.contact-section {
+    background: var(--kamen);
+}
+
+.contact-section .section-title {
+    max-width: 520px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.contact-detail > i {
+    display: flex;
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    background: var(--bijela);
+    color: var(--maslina);
+    font-size: 1.35rem;
+}
+
+.contact-detail h3 {
+    margin: 0 0 3px;
+    color: var(--med-plava);
+    font-family: "DM Sans", sans-serif;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.contact-detail p {
+    margin: 0;
+    color: var(--tekst-soft);
+    font-size: .88rem;
+    overflow-wrap: anywhere;
+}
+
+.contact-form {
+    padding: clamp(24px, 4vw, 42px);
+    border: 1px solid rgba(23, 61, 75, .08);
+    background: var(--bijela);
+    box-shadow: 0 12px 40px rgba(23, 61, 75, .06);
+}
+
+.contact-form h3 {
+    margin-bottom: 8px;
+    color: var(--med-plava);
+    font-size: 1.8rem;
+}
+
+.contact-form > p {
+    margin-bottom: 25px;
+    color: var(--tekst-soft);
+    font-size: .9rem;
+}
+
+.contact-form .form-label {
+    color: var(--med-plava);
+    font-size: .81rem;
+    font-weight: 700;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    min-height: 49px;
+    border: 1px solid #deded5;
+    border-radius: 2px;
+    background-color: #fffefa;
+    color: var(--tekst);
+    font-family: "DM Sans", sans-serif;
+    font-size: .9rem;
+}
+
+.contact-form textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--maslina);
+    box-shadow: 0 0 0 .2rem rgba(104, 116, 91, .12);
+}
+
+/* ==========================================================================
+   PODNOŽJE
+   ========================================================================== */
+
+.site-footer {
+    padding: 40px 0 20px;
+    background: #102f3a;
+    color: rgba(255, 255, 255, .78);
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+.footer-brand {
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.footer-brand span {
+    margin-top: 4px;
+    color: #d9c19a;
+    font-family: "DM Sans", sans-serif;
+    font-size: .55rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-main > p {
+    margin: 0 auto 0 0;
+    color: rgba(255, 255, 255, .68);
+    font-size: .88rem;
+}
+
+.back-to-top {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, .3);
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: white;
+    color: var(--med-plava);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, .13);
+    font-size: .75rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #e2c69b;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+/* ==========================================================================
+   PRILAGODBA TABLETIMA I MOBITELIMA
+   ========================================================================== */
+
+@media (max-width: 991.98px) {
+    .modern-navbar {
+        padding: 13px 0;
+    }
+
+    .navbar-collapse {
+        margin-top: 13px;
+        padding: 12px 16px 20px;
+        border: 1px solid var(--linija);
+        background: var(--bijela);
+        box-shadow: 0 15px 30px rgba(23, 61, 75, .08);
+    }
+
+    .modern-navbar .nav-link {
+        padding: 11px 4px !important;
+    }
+
+    .modern-navbar .nav-link::after {
+        right: auto;
+        bottom: 3px;
+        left: 4px;
+        width: 30px;
+    }
+
+    .modern-navbar .nav-item.ms-lg-3 {
+        margin-left: 0 !important;
+    }
+
+    .hero-fullscreen {
+        min-height: 690px;
+        height: 88svh;
+        max-height: 850px;
+        background-position: center;
+    }
+
+    .hero-content-wrapper {
+        padding-top: 105px;
+        padding-bottom: 90px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(90deg, rgba(14, 39, 48, .78), rgba(14, 39, 48, .38));
+    }
+
+    .main-title {
+        font-size: clamp(3rem, 8vw, 5.2rem);
+    }
+
+    .hero-bottom-note {
+        right: 25px;
+        bottom: 24px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .apartment-showcase-img img {
+        height: 470px;
+    }
+
+    .gallery-large {
+        height: 330px;
+    }
+
+    .gallery-small {
+        height: 270px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --padding-sekcija: 66px;
+    }
+
+    .brand-name {
+        font-size: 1.55rem;
+    }
+
+    .brand-sub {
+        font-size: .49rem;
+        letter-spacing: 1.8px;
+    }
+
+    .hero-fullscreen {
+        min-height: 700px;
+        height: 90svh;
+        max-height: 820px;
+        background-position: 58% center;
+    }
+
+    .hero-content-wrapper {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .hero-tagline {
+        gap: 9px;
+        font-size: .62rem;
+        letter-spacing: 1.8px;
+    }
+
+    .hero-tagline-line {
+        width: 24px;
+    }
+
+    .main-title {
+        margin-bottom: 20px;
+        font-size: clamp(2.8rem, 13vw, 4.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .hero-desc {
+        margin-bottom: 26px;
+        font-size: .96rem;
+        line-height: 1.75;
+    }
+
+    .hero-buttons {
+        align-items: stretch;
+        gap: 10px !important;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        padding: 14px 15px;
+        font-size: .7rem;
+    }
+
+    .hero-bottom-note {
+        right: 15px;
+        bottom: 17px;
+        left: 15px;
+        justify-content: center;
+        font-size: .56rem;
+        letter-spacing: 1.5px;
+    }
+
+    .intro-strip {
+        padding: 22px 0;
+    }
+
+    .intro-strip .row > div {
+        justify-content: flex-start;
+        padding-left: 22px;
+        font-size: .75rem;
+        text-align: left;
+    }
+
+    .intro-strip i {
+        font-size: 1.15rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+        letter-spacing: -.7px;
+    }
+
+    .section-badge {
+        font-size: .65rem;
+        letter-spacing: 1.8px;
+    }
+
+    .apartment-showcase-img {
+        padding-right: 12px;
+        padding-bottom: 12px;
+    }
+
+    .apartment-showcase-img::before {
+        top: 13px;
+        left: 13px;
+    }
+
+    .apartment-showcase-img img {
+        height: 360px;
+    }
+
+    .price-badge-floating {
+        right: -2px;
+        bottom: 25px;
+        min-width: 145px;
+        padding: 14px 17px;
+    }
+
+    .badge-amount {
+        font-size: 1.4rem;
+    }
+
+    .amenity-item-box {
+        align-items: flex-start;
+        gap: 9px;
+    }
+
+    .amenity-item-box > i {
+        width: 39px;
+        min-width: 39px;
+        height: 39px;
+        font-size: 1.2rem;
+    }
+
+    .amenity-item-box h3 {
+        font-size: .8rem;
+    }
+
+    .amenity-item-box p {
+        font-size: .69rem;
+    }
+
+    .experience-card {
+        padding: 27px 24px;
+    }
+
+    .gallery-heading {
+        align-items: flex-start !important;
+    }
+
+    .gallery-heading > p {
+        margin: 0;
+    }
+
+    .gallery-large,
+    .gallery-small {
+        height: 270px;
+    }
+
+    .gallery-caption {
+        bottom: 17px;
+        left: 18px;
+        font-size: 1.15rem;
+    }
+
+    .booking-banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .booking-banner p {
+        font-size: .92rem;
+    }
+
+    .contact-form {
+        padding: 23px 18px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.55rem;
+    }
+
+    .footer-main {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-main > p {
+        order: 3;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* Poštuj postavku smanjenih animacija na uređaju korisnika */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+/* =========================================
+   SLIDESHOW - APARTMAN AL MARE
+   ========================================= */
+
+.hero-fullscreen {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow: hidden;
+    isolation: isolate;
+    background: #123b4a;
+}
+
+.hero-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0;
+    transform: scale(1.04);
+
+    transition:
+        opacity 1.5s ease-in-out,
+        transform 6s ease-out;
+
+    will-change: opacity, transform;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(8, 29, 38, 0.72) 0%,
+        rgba(8, 29, 38, 0.43) 55%,
+        rgba(8, 29, 38, 0.20) 100%
+    );
+}
+
+/* Tekst ostaje iznad fotografija */
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content-wrapper .main-title {
+    color: #fff;
+    text-shadow: 0 3px 25px rgba(0, 0, 0, 0.18);
+}
+
+.hero-content-wrapper .hero-desc {
+    margin-left: 0;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+/* Prilagodba mobitelima */
+
+@media (max-width: 767.98px) {
+    .hero-fullscreen {
+        min-height: 90vh;
+        min-height: 90svh;
+    }
+
+    .hero-slide {
+        background-position: center center;
+    }
+
+    .hero-overlay {
+        background: rgba(8, 29, 38, 0.48);
+    }
+
+    .hero-tagline {
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+    }
+
+    .hero-content-wrapper .main-title {
+        font-size: clamp(2.6rem, 11vw, 4rem);
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+    }
+}
+
+/* Poštivanje postavke smanjenog kretanja */
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+        transition: none;
+        transform: none;
+    }
+}
+.apartment-showcase-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .apartment-showcase-img img {
+        height: 320px;
+    }
+}
+
+
+/* Jedinstven izgled navigacije na svim stranicama */
+.navbar .nav-link {
+    color: var(--sea-deep);
+    transition: color 0.25s ease;
+}
+
+/* Efekt prelaska mišem */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+    color: var(--sand);
+}
+
+/* Aktivna stavka - stranica na kojoj se trenutno nalaziš */
+.navbar .nav-link.active {
+    color: var(--sand);
+    font-weight: 700;
+}
+
+/* Gumb Rezervirajte boravak */
+.navbar .btn-book {
+    background-color: var(--sea);
+    color: #ffffff;
+    border: 1px solid var(--sea);
+    transition: background-color 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.navbar .btn-book:hover,
+.navbar .btn-book:focus-visible {
+    background-color: var(--sand);
+    color: var(--sea-deep);
+    border-color: var(--sand);
+}
+
+
+/* PODNOŽJE I KONTAKT */
+.site-footer {
+    padding: 65px 0 20px;
+    background: var(--sea-deep, #0b2a31);
+    color: #f8f5ed;
+}
+
+.footer-brand {
+    display: inline-block;
+    color: #f8f5ed;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.footer-brand:hover {
+    color: var(--sand, #d8c39b);
+}
+
+.footer-subtitle {
+    margin-top: 5px;
+    color: var(--sand, #d8c39b);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.footer-description {
+    max-width: 380px;
+    margin-top: 20px;
+    color: rgba(248, 245, 237, 0.75);
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+    color: var(--sand, #d8c39b);
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+    color: rgba(248, 245, 237, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-contact-item i {
+    color: var(--sand, #d8c39b);
+    font-size: 1.1rem;
+}
+
+.footer-contact-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-item a:hover {
+    color: var(--sand, #d8c39b);
+}
+
+.footer-links {
+    margin: 0 0 22px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 11px;
+}
+
+.footer-links a {
+    color: rgba(248, 245, 237, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--sand, #d8c39b);
+}
+
+.footer-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 16px;
+    border: 1px solid var(--sand, #d8c39b);
+    color: var(--sand, #d8c39b);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.footer-cta:hover {
+    background: var(--sand, #d8c39b);
+    color: var(--sea-deep, #0b2a31);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(248, 245, 237, 0.18);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: rgba(248, 245, 237, 0.6);
+    font-size: 0.78rem;
+}
+
+#kontakt {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 767.98px) {
+    .site-footer {
+        padding-top: 45px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Gumb za povratak na vrh stranice */
+.footer-back-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(248, 245, 237, 0.14);
+}
+
+.back-to-top {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 10px 18px;
+    min-width: 175px;
+    min-height: 48px;
+    box-sizing: border-box;
+
+    background: transparent;
+    border: 1px solid rgba(216, 195, 155, 0.55);
+    border-radius: 3px;
+
+    color: var(--sand, #d8c39b);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: background-color 0.25s ease,
+                color 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.back-to-top i {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(216, 195, 155, 0.55);
+    font-size: 1rem;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.back-to-top:hover {
+    background: var(--sand, #d8c39b);
+    border-color: var(--sand, #d8c39b);
+    color: var(--sea-deep, #0b2a31);
+}
+
+.back-to-top:hover i {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 767.98px) {
+    .footer-back-top {
+        justify-content: center;
+    }
+}
+
+.navbar .nav-link {
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+
+#kontakt {
+    scroll-margin-top: 110px;
+}
+
+@media (max-width: 991.98px) {
+    #kontakt {
+        scroll-margin-top: 90px;
+    }
+}
+
+
+/* Izbornik jezika – mala zastava lijevo od oznake */
+.almare-language-button {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 4px;
+    border: none;
+    background: transparent;
+    color: var(--med-plava);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.almare-language-flag {
+    display: block;
+    width: 16px;
+    height: 11px;
+    object-fit: cover;
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+.almare-language-label {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.almare-language-button:hover,
+.almare-language-button.active {
+    opacity: 1;
+}
+
+.almare-language-separator {
+    display: inline;
+    opacity: 0.4;
+    font-size: 0.75rem;
+}
+
+.privacy-notice {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: #68745b;
+    text-align: center;
+}
+
+.privacy-notice a {
+    color: #245d69;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.privacy-notice a:hover {
+    color: #173d4b;
+}
