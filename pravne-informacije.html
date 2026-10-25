@@ -1,486 +1,373 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Pravne informacije | Mobilna kućica Al Mare</title>
-    <meta name="description"
-          content="Pravne informacije, politika privatnosti, kolačići, pisani prigovori i vanjske usluge za Apartmani Al Mare.">
+    <meta name="description" content="Pravne informacije, politika privatnosti, kolačići, pisani prigovori i vanjske usluge za Mobilna kućica Al Mare.">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
-          rel="stylesheet">
+    <!-- Google Fonts – isti fontovi kao na početnoj stranici -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
 
     <style>
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 110px;
-        }
-
-        body {
-            background: #f7f4ec;
-            color: #173d4b;
-        }
-
-        .legal-hero {
-            padding: 150px 0 55px;
-            background: #173d4b;
-            color: #fffefa;
-        }
-
-        .legal-hero .eyebrow {
-            color: #d4c5a2;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: .8rem;
-        }
-
-        .legal-hero h1 {
-            margin: 14px 0;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-        }
-
-        .legal-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 20px 80px;
-        }
-
-        .legal-section {
-            padding: 28px 0;
-            border-bottom: 1px solid #d9d4c8;
-        }
-
-        .legal-section h2 {
-            margin-bottom: 18px;
-            font-size: 1.45rem;
-            color: #173d4b;
-        }
-
-        .legal-section h3 {
-            margin-top: 22px;
-            font-size: 1.08rem;
-        }
-
-        .legal-section p,
-        .legal-section li {
-            line-height: 1.8;
-            color: #46565a;
-        }
-
-        .legal-section a {
-            color: #245d69;
-            overflow-wrap: anywhere;
-        }
-
-        .legal-note {
-            padding: 16px 18px;
-            margin-top: 18px;
-            background: #fffefa;
-            border-left: 3px solid #68745b;
-            border-radius: 4px;
-        }
-
-        .legal-date {
-            color: #647477;
-            font-size: .9rem;
-        }
-
-        .legal-back {
-            display: inline-block;
-            margin-top: 30px;
-            color: #245d69;
-        }
-
+        html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+        body { background: #f7f4ec; color: #173d4b; }
+        .legal-hero { padding: 150px 0 55px; background: #173d4b; color: #fffefa; }
+        .legal-hero .eyebrow { color: #d4c5a2; text-transform: uppercase; letter-spacing: 3px; font-size: .8rem; }
+        .legal-hero h1 { margin: 14px 0; font-size: clamp(2rem, 5vw, 3.5rem); }
+        .legal-content { max-width: 900px; margin: 0 auto; padding: 50px 20px 80px; }
+        .legal-section { padding: 28px 0; border-bottom: 1px solid #d9d4c8; }
+        .legal-section h2 { margin-bottom: 18px; font-size: 1.45rem; color: #173d4b; }
+        .legal-section h3 { margin-top: 22px; font-size: 1.08rem; }
+        .legal-section p, .legal-section li { line-height: 1.8; color: #46565a; }
+        .legal-section a { color: #245d69; overflow-wrap: anywhere; }
+        .legal-note { padding: 16px 18px; margin-top: 18px; background: #fffefa; border-left: 3px solid #68745b; border-radius: 4px; }
+        .legal-date { color: #647477; font-size: .9rem; }
+        .legal-back { display: inline-block; margin-top: 30px; color: #245d69; }
+        .legal-language-content[hidden] { display: none !important; }
         @media (max-width: 767px) {
-            .legal-hero {
-                padding-top: 125px;
-            }
-
-            .legal-content {
-                padding-top: 30px;
-            }
+            .legal-hero { padding-top: 125px; }
+            .legal-content { padding-top: 30px; }
         }
-        .language-btn {
-    border: 1px solid #d4c5a2;
-    border-radius: 4px;
-    padding: 5px 9px;
-    background: transparent;
-    color: #173d4b;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.language-btn:hover,
-.language-btn.active {
-    background: #173d4b;
-    color: #fffefa;
-}
-
-.legal-language-content[hidden] {
-    display: none !important;
-}
-
-@media (max-width: 991px) {
-    .language-switcher {
-        padding: 10px 0;
-    }
-}
+        @media (max-width: 991px) {
+            .language-switcher { padding: 10px 0; }
+        }
     </style>
 </head>
-
 <body>
-
     <!-- NAVIGACIJA -->
     <nav class="navbar navbar-expand-lg fixed-top modern-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"
-               aria-label="Mobilna kućica Al Mare – početna">
+            <a class="navbar-brand" href="index.html" aria-label="Mobilna kućica Al Mare – početna">
                 <span class="brand-name">AL MARE</span>
                 <span class="brand-sub">MEDITERRANEAN MOBILE HOME</span>
             </a>
-
-            <button class="navbar-toggler border-0 shadow-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Otvori navigaciju">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Otvori navigaciju">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#pocetna">Početna</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#o-apartmanu">Apartman</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galerija.html">Galerija</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="lokacija.html">Lokacija</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#footer">Kontakt</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#pocetna">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#o-mobilnoj-kućici">Mobilna kućica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lokacija.html">Lokacija</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#footer">Kontakt</a></li>
                     <li class="nav-item ms-lg-3 my-3 my-lg-0">
-                        <a href="index.html#kontakt-forma"
-                           class="btn btn-nav-action">
-                            Pošaljite upit
-                            <i class="ri-arrow-right-up-line"></i>
-                        </a>
+                        <a href="index.html#kontakt-forma" class="btn btn-nav-action">Pošaljite upit <i class="ri-arrow-right-up-line"></i></a>
                     </li>
                 </ul>
-                <div class="language-switcher ms-lg-3 d-flex gap-2">
-    <button type="button" class="language-btn active" data-lang="hr">HR</button>
-    <button type="button" class="language-btn" data-lang="en">EN</button>
-</div>
             </div>
         </div>
     </nav>
 
-    <!-- NASLOV -->
-     <div class="legal-language-content" data-content="hr"></div>
-    <header class="legal-hero">
-        <div class="container">
-            <p class="eyebrow">Mobilna kućica Al Mare · Murter</p>
-            <h1>Pravne informacije</h1>
-            <p class="mb-0">
-                Informacije o privatnosti, kolačićima i korištenju sadržaja
-                ove web-stranice.
-            </p>
-        </div>
-    </header>
-
-    <main class="legal-content">
-<p class="legal-date">Posljednje ažuriranje: 24. listopada 2026.</p>
-<section class="legal-section" id="iznajmljivac">
-<h2>1. Podaci o iznajmljivaču</h2>
-<ul>
-<li><strong>Naziv smještaja:</strong> Mobilna kućica Al Mare</li>
-<li><strong>Status:</strong> Privatni iznajmljivač – fizička osoba</li>
-<li><strong>Ime i prezime iznajmljivača:</strong> Zoran Garma</li>
-<li><strong>Adresa:</strong> Turistička 1, Murter, Croatia</li>
-<li><strong>E-mail:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
-<li><strong>Telefon:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
-<li><strong>Lokacija smještaja:</strong> Murter, Uvala Slanica, Dalmacija, Hrvatska</li>
-<li><strong>Vrsta smještaja:</strong> Mobilna kućica</li>
-<li><strong>Kategorija smještaja:</strong> Podatak će biti naknadno dopunjen prema službenom rješenju o kategorizaciji.</li>
-</ul>
-</section>
-<section class="legal-section" id="privatnost">
-<h2>2. Politika privatnosti</h2>
-<p>Mobilna kućica Al Mare poštuju privatnost posjetitelja internetske stranice i nastoje zaštititi osobne podatke koje korisnici dostavljaju putem kontakt-obrasca ili drugim oblicima komunikacije.</p>
-<h3>Koje podatke prikupljamo?</h3>
-<p>Putem kontakt-obrasca možemo zaprimiti sljedeće podatke:</p>
-<ul><li>ime i prezime</li><li>adresu e-pošte</li><li>telefonski broj, ako ga korisnik navede</li><li>željeni datum dolaska i odlaska</li><li>broj gostiju</li><li>sadržaj poruke i dodatne informacije koje korisnik dobrovoljno navede.</li></ul>
-<p>Podaci se koriste za odgovaranje na upite, komunikaciju s potencijalnim gostima, dogovor uvjeta boravka i, kada je primjenjivo, ispunjavanje zakonskih obveza.</p>
-<h3>Pravna osnova obrade</h3>
-<p>Podaci se obrađuju u mjeri potrebnoj za poduzimanje radnji na zahtjev korisnika prije mogućeg dogovora boravka, za ispunjavanje primjenjivih zakonskih obveza ili na drugoj odgovarajućoj pravnoj osnovi, ovisno o svrsi obrade.</p>
-<h3>Koliko dugo čuvamo podatke?</h3>
-<p>Podaci iz upita na koji nije uslijedio dogovor boravka predviđeno se čuvaju najdulje 12 mjeseci od posljednje komunikacije, nakon čega se brišu ili anonimiziraju, osim ako postoji opravdana zakonska obveza ili potreba njihova duljeg čuvanja radi ostvarivanja ili obrane pravnih zahtjeva.</p>
-<p>Podaci povezani s dogovorenim boravkom, računovodstvom, zakonskim evidencijama ili prigovorima mogu se čuvati dulje, koliko zahtijevaju primjenjivi propisi ili opravdana svrha obrade.</p>
-<p>Navedeni rokovi predstavljaju pravilo čuvanja koje će se primjenjivati i potrebno ga je provoditi u praksi. Pružatelji vanjskih usluga mogu imati zasebne rokove čuvanja svojih tehničkih zapisa.</p>
-<h3>Pružatelji usluga i primatelji podataka</h3>
-<p>Za rad internetske stranice i slanje poruka mogu se koristiti vanjski pružatelji usluga, uključujući GitHub Pages, Google Maps i Resend. Ti pružatelji mogu obrađivati određene tehničke podatke ili podatke potrebne za pružanje njihove usluge.</p>
-<p>Osobni podaci ne prodaju se trećim osobama. Podaci se mogu otkriti nadležnim tijelima kada to zahtijevaju propisi ili kada je to nužno radi zaštite pravnih interesa.</p>
-<p>Ovisno o usluzi i njezinoj infrastrukturi, obrada se može odvijati i izvan Europskog gospodarskog prostora. U takvim slučajevima primjenjuju se odgovarajući mehanizmi zaštite kada su propisani.</p>
-<h3>Prava korisnika</h3>
-<p>U skladu s primjenjivim propisima o zaštiti osobnih podataka korisnik može zatražiti pristup svojim podacima, ispravak netočnih podataka, brisanje ili ograničenje obrade kada su za to ispunjeni uvjeti, kao i uložiti prigovor na obradu kada je to primjenjivo.</p>
-<p>Za zahtjeve i pitanja o privatnosti možete se javiti na: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
-<p>Korisnik također ima pravo podnijeti pritužbu nadležnom nadzornom tijelu za zaštitu osobnih podataka, odnosno Agenciji za zaštitu osobnih podataka (AZOP).</p>
-</section>
-<section class="legal-section" id="kolacici">
-<h2>3. Kolačići i slične tehnologije</h2>
-<p>Internetska stranica koristi tehničke funkcionalnosti potrebne za prikaz i rad stranice. Ovisno o postavkama i korištenim uslugama, mogu se koristiti kolačići ili slične tehnologije.</p>
-<p>Stranica može sadržavati ugrađenu Google Maps kartu za prikaz lokacije smještaja. Učitavanje takvog sadržaja može uključivati obradu tehničkih podataka i postavljanje kolačića od strane pružatelja usluge, ovisno o postavkama preglednika i načinu učitavanja karte.</p>
-<p>U trenutku sastavljanja ovih informacija nije potvrđeno koriste li se na stranici dodatni analitički ili marketinški kolačići. Stvarno stanje potrebno je provjeriti prije objave konačne politike kolačića.</p>
-<p>Ako se koriste kolačići koji nisu nužni za rad stranice, potrebno je osigurati odgovarajuće obavještavanje korisnika i, kada je propisano, prethodnu privolu.</p>
-</section>
-<section class="legal-section" id="rezervacije">
-<h2>4. Upiti i dogovor boravka</h2>
-<p>Putem ove internetske stranice korisnici mogu poslati upit o raspoloživosti smještaja i željenim datumima boravka.</p>
-<p>Slanje kontakt-obrasca <strong>ne predstavlja automatsku potvrdu rezervacije</strong>. Nakon zaprimanja upita iznajmljivač kontaktira korisnika radi provjere raspoloživosti i dogovora detalja boravka.</p>
-<p>Rezervacija se smatra dogovorenom tek nakon naknadne potvrde i dogovora između korisnika i iznajmljivača. Uvjeti plaćanja, dolaska, odlaska i ostali detalji dogovaraju se izravno s iznajmljivačem.</p>
-<p>Korisnici trebaju navesti točne podatke potrebne za obradu upita. Podaci se koriste u svrhe opisane u ovoj politici privatnosti.</p>
-</section>
-<section class="legal-section" id="prigovori">
-<h2>5. Pisani prigovori potrošača</h2>
-<p>Potrošači mogu podnijeti pisani prigovor u vezi s uslugama smještaja ili drugim pitanjima povezanima s pružanjem usluge.</p>
-<p>Prigovor se može poslati:</p>
-<ul>
-<li><strong>E-mailom:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
-<li><strong>Poštom:</strong> Zoran Garma, Turistička 1, Murter, Croatia</li>
-<li><strong>Telefonom za kontakt:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
-</ul>
-<p>Radi lakšeg postupanja preporučuje se da prigovor sadržava ime i prezime podnositelja, kontaktne podatke, opis razloga prigovora i relevantne informacije o dogovorenom boravku.</p>
-<p>Na pisani prigovor odgovorit ćemo u pisanom obliku u zakonskom roku od <strong>15 dana od dana zaprimanja</strong>, kada se ta obveza primjenjuje na konkretan odnos i uslugu. Ako je potrebno, podnositelj može biti zamoljen za dodatne informacije radi razmatranja prigovora.</p>
-<p>Prigovori i evidencija o njima čuvat će se tijekom razdoblja propisanog primjenjivim propisima, uključujući obvezu čuvanja evidencije o pisanim prigovorima kada je ona primjenjiva.</p>
-</section>
-<section class="legal-section" id="vanjske-usluge">
-<h2>6. Vanjske usluge i pružatelji usluga</h2>
-<p>Za rad stranice i povezane funkcionalnosti mogu se koristiti sljedeće usluge:</p>
-<h3>GitHub Pages</h3>
-<p>Internetska stranica objavljena je putem usluge GitHub Pages. Pružatelj usluge može obrađivati tehničke podatke potrebne za isporuku stranice, sigurnost i rad infrastrukture.</p>
-<p>Pravila privatnosti: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
-<h3>Google Maps</h3>
-<p>Na stranici lokacije ugrađena je Google Maps karta radi prikaza lokacije smještaja. Učitavanje karte može uzrokovati prijenos tehničkih podataka Googleu i obradu podataka u skladu s Googleovim pravilima.</p>
-<p>Pravila privatnosti: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleova pravila privatnosti</a>.</p>
-<h3>Resend</h3>
-<p>Za tehničko slanje poruka iz kontakt-obrasca koristi se usluga Resend. Podaci potrebni za dostavu poruke mogu se obrađivati kroz ovu uslugu, uključujući određene tehničke zapise povezane sa slanjem e-pošte.</p>
-<p>Pravila privatnosti: <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Resend Privacy Policy</a>.</p>
-<p>Vanjski pružatelji usluga odgovorni su za obradu koju provode u skladu sa svojim pravilima i primjenjivim propisima. Stvarni opseg obrade i eventualni međunarodni prijenosi ovise o konfiguraciji usluga i njihovim važećim uvjetima.</p>
-</section>
-<section class="legal-section" id="autorska-prava">
-<h2>7. Autorska prava</h2>
-<p>Sadržaj ove internetske stranice, uključujući tekstove, vizualne elemente, dizajn i fotografije koje pripadaju iznajmljivaču ili se koriste uz odgovarajuće dopuštenje, zaštićen je primjenjivim propisima o autorskom pravu i drugim pravima intelektualnog vlasništva.</p>
-<p>Umnožavanje, distribucija, javna objava ili druga uporaba sadržaja bez prethodnog dopuštenja nositelja prava nije dopuštena, osim u slučajevima dopuštenima zakonom.</p>
-<p>Za pitanja o sadržaju stranice i dopuštenju za njegovu uporabu možete se javiti na: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
-</section>
-<a class="legal-back" href="index.html"><i class="ri-arrow-left-line"></i> Povratak na početnu stranicu</a>
-</main>
-
-<div class="legal-language-content" data-content="en" hidden>
-
-    <header class="legal-hero">
-        <div class="container">
-            <p class="eyebrow">Apartmani Al Mare · Murter</p>
-            <h1>Legal Information</h1>
-            <p class="mb-0">
-                Information about privacy, cookies and the use of content
-                on this website.
-            </p>
-        </div>
-    </header>
-
-    <main class="legal-content">
-
-        <p class="legal-date">Last updated: 21 October 2026.</p>
-
-        <section class="legal-section" id="provider-en">
-            <h2>1. Accommodation Provider</h2>
-            <p>
-                This website presents accommodation operating under the name
-                Apartmani Al Mare. Enquiries about stays are submitted through
-                the contact form, while details and any reservation are agreed
-                upon subsequently with the accommodation provider.
-            </p>
-            <ul>
-                <li><strong>Status:</strong> Private accommodation provider – individual</li>
-                <li><strong>Name:</strong> Zoran Garma</li>
-                <li><strong>Phone:</strong>
-                    <a href="tel:+385911923895">+385 91 192 3895</a>
-                </li>
-                <li><strong>Address:</strong> [TO BE COMPLETED before publication]</li>
-                <li><strong>Email:</strong> [TO BE COMPLETED before publication]</li>
-            </ul>
-            <div class="legal-note">
-                Before publishing, complete the missing details and check
-                which accommodation-provider information must be disclosed
-                under the rules applicable to your business.
+    <!-- HRVATSKI -->
+    <div class="legal-language-content" data-content="hr" data-no-translate>
+        <header class="legal-hero">
+            <div class="container">
+                <p class="eyebrow">Mobilna kućica Al Mare · Murter</p>
+                <h1>Pravne informacije</h1>
+                <p class="mb-0">Informacije o privatnosti, kolačićima i korištenju sadržaja ove web-stranice.</p>
             </div>
-        </section>
+        </header>
+        <main class="legal-content">
+            <p class="legal-date">Posljednje ažuriranje: 25. listopada 2026.</p>
 
-        <section class="legal-section" id="privacy-en">
-            <h2>2. Privacy Policy</h2>
+            <section class="legal-section" id="iznajmljivac">
+                <h2>1. Podaci o iznajmljivaču</h2>
+                <ul>
+                    <li><strong>Naziv smještaja:</strong> Mobilna kućica Al Mare</li>
+                    <li><strong>Status:</strong> Privatni iznajmljivač – fizička osoba</li>
+                    <li><strong>Ime i prezime iznajmljivača:</strong> Zoran Garma</li>
+                    <li><strong>Adresa:</strong> Turistička 1, Murter, Croatia</li>
+                    <li><strong>E-mail:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
+                    <li><strong>Telefon:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
+                    <li><strong>Lokacija smještaja:</strong> Murter, Uvala Slanica, Dalmacija, Hrvatska</li>
+                    <li><strong>Vrsta smještaja:</strong> Mobilna kućica</li>
+                    <li><strong>Kategorija smještaja:</strong> Kategorizacija kampa, tri zvijezdice</li>
+                </ul>
+            </section>
 
-            <h3>Data Controller</h3>
-            <p>
-                The data controller is Zoran Garma, a private accommodation
-                provider operating under the name Apartmani Al Mare.
-                Privacy contact: [ADD email address].
-            </p>
+            <section class="legal-section" id="privatnost">
+                <h2>2. Politika privatnosti</h2>
+                <p>Mobilna kućica Al Mare poštuje privatnost posjetitelja internetske stranice i nastoji zaštititi osobne podatke koje korisnici dostavljaju putem kontakt-obrasca ili drugih oblika komunikacije.</p>
+                <h3>Koje podatke prikupljamo?</h3>
+                <p>Putem kontakt-obrasca možemo zaprimiti sljedeće podatke:</p>
+                <ul><li>ime i prezime</li><li>adresu e-pošte</li><li>telefonski broj, ako ga korisnik navede</li><li>željeni datum dolaska i odlaska</li><li>broj gostiju</li><li>sadržaj poruke i dodatne informacije koje korisnik dobrovoljno navede.</li></ul>
+                <p>Podaci se koriste za odgovaranje na upite, komunikaciju s potencijalnim gostima, dogovor uvjeta boravka i, kada je primjenjivo, ispunjavanje zakonskih obveza.</p>
+                <h3>Pravna osnova obrade</h3>
+                <p>Podaci se obrađuju u mjeri potrebnoj za poduzimanje radnji na zahtjev korisnika prije mogućeg dogovora boravka, za ispunjavanje primjenjivih zakonskih obveza ili na drugoj odgovarajućoj pravnoj osnovi, ovisno o svrsi obrade.</p>
+                <h3>Koliko dugo čuvamo podatke?</h3>
+                <p>Podaci iz upita na koji nije uslijedio dogovor boravka predviđeno se čuvaju najdulje 12 mjeseci od posljednje komunikacije, nakon čega se brišu ili anonimiziraju, osim ako postoji opravdana zakonska obveza ili potreba njihova duljeg čuvanja radi ostvarivanja ili obrane pravnih zahtjeva.</p>
+                <p>Podaci povezani s dogovorenim boravkom, računovodstvom, zakonskim evidencijama ili prigovorima mogu se čuvati dulje, koliko zahtijevaju primjenjivi propisi ili opravdana svrha obrade.</p>
+                <p>Navedeni rokovi predstavljaju pravilo čuvanja koje je potrebno provoditi u praksi. Pružatelji vanjskih usluga mogu imati zasebne rokove čuvanja svojih tehničkih zapisa.</p>
+                <h3>Pružatelji usluga i primatelji podataka</h3>
+                <p>Za rad internetske stranice i slanje poruka mogu se koristiti vanjski pružatelji usluga, uključujući GitHub Pages, Google Maps i Resend. Ti pružatelji mogu obrađivati određene tehničke podatke ili podatke potrebne za pružanje njihove usluge.</p>
+                <p>Osobni podaci ne prodaju se trećim osobama. Podaci se mogu otkriti nadležnim tijelima kada to zahtijevaju propisi ili kada je to nužno radi zaštite pravnih interesa.</p>
+                <p>Ovisno o usluzi i njezinoj infrastrukturi, obrada se može odvijati i izvan Europskog gospodarskog prostora. U takvim slučajevima primjenjuju se odgovarajući mehanizmi zaštite kada su propisani.</p>
+                <h3>Prava korisnika</h3>
+                <p>U skladu s primjenjivim propisima o zaštiti osobnih podataka korisnik može zatražiti pristup svojim podacima, ispravak netočnih podataka, brisanje ili ograničenje obrade kada su za to ispunjeni uvjeti, kao i uložiti prigovor na obradu kada je to primjenjivo.</p>
+                <p>Za zahtjeve i pitanja o privatnosti možete se javiti na: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
+                <p>Korisnik također ima pravo podnijeti pritužbu nadležnom nadzornom tijelu za zaštitu osobnih podataka, odnosno Agenciji za zaštitu osobnih podataka (AZOP).</p>
+            </section>
 
-            <h3>What information may we collect?</h3>
-            <p>
-                When you send an accommodation enquiry, we may process the
-                information you enter in the form, such as your name, email
-                address, telephone number if provided, preferred stay dates,
-                number of guests and message content.
-            </p>
+            <section class="legal-section" id="kolacici">
+                <h2>3. Kolačići i slične tehnologije</h2>
+                <p>Internetska stranica koristi tehničke funkcionalnosti potrebne za prikaz i rad stranice. Ovisno o postavkama i korištenim uslugama, mogu se koristiti kolačići ili slične tehnologije.</p>
+                <p>Stranica može sadržavati ugrađenu Google Maps kartu za prikaz lokacije smještaja. Učitavanje takvog sadržaja može uključivati obradu tehničkih podataka i postavljanje kolačića od strane pružatelja usluge, ovisno o postavkama preglednika i načinu učitavanja karte.</p>
+                <p>U trenutku sastavljanja ovih informacija nije potvrđeno koriste li se na stranici dodatni analitički ili marketinški kolačići. Stvarno stanje potrebno je provjeriti prije objave konačne politike kolačića.</p>
+                <p>Ako se koriste kolačići koji nisu nužni za rad stranice, potrebno je osigurati odgovarajuće obavještavanje korisnika i, kada je propisano, prethodnu privolu.</p>
+            </section>
 
-            <h3>Why do we process your information?</h3>
-            <p>
-                We use your information to respond to your enquiry, check
-                accommodation availability and discuss the conditions of a
-                potential stay. If a reservation is agreed, certain information
-                may also be processed to comply with legal obligations.
-            </p>
+            <section class="legal-section" id="rezervacije">
+                <h2>4. Upiti i dogovor boravka</h2>
+                <p>Putem ove internetske stranice korisnici mogu poslati upit o raspoloživosti smještaja i željenim datumima boravka.</p>
+                <p>Slanje kontakt-obrasca <strong>ne predstavlja automatsku potvrdu rezervacije</strong>. Nakon zaprimanja upita iznajmljivač kontaktira korisnika radi provjere raspoloživosti i dogovora detalja boravka.</p>
+                <p>Rezervacija se smatra dogovorenom tek nakon naknadne potvrde i dogovora između korisnika i iznajmljivača. Uvjeti plaćanja, dolaska, odlaska i ostali detalji dogovaraju se izravno s iznajmljivačem.</p>
+                <p>Korisnici trebaju navesti točne podatke potrebne za obradu upita. Podaci se koriste u svrhe opisane u ovoj politici privatnosti.</p>
+            </section>
 
-            <h3>Legal Basis</h3>
-            <p>
-                Where the conditions are met, information necessary to respond
-                to an enquiry and take steps before entering into a contract
-                is processed under Article 6(1)(b) of the General Data
-                Protection Regulation (GDPR). Other purposes require an
-                appropriate legal basis.
-            </p>
+            <section class="legal-section" id="prigovori">
+                <h2>5. Pisani prigovori potrošača</h2>
+                <p>Potrošači mogu podnijeti pisani prigovor u vezi s uslugama smještaja ili drugim pitanjima povezanima s pružanjem usluge.</p>
+                <p>Prigovor se može poslati:</p>
+                <ul>
+                    <li><strong>E-mailom:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
+                    <li><strong>Poštom:</strong> Zoran Garma, Turistička 1, Murter, Croatia</li>
+                    <li><strong>Telefonom za kontakt:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
+                </ul>
+                <p>Radi lakšeg postupanja preporučuje se da prigovor sadržava ime i prezime podnositelja, kontaktne podatke, opis razloga prigovora i relevantne informacije o dogovorenom boravku.</p>
+                <p>Na pisani prigovor odgovorit ćemo u pisanom obliku u zakonskom roku od <strong>15 dana od dana zaprimanja</strong>, kada se ta obveza primjenjuje na konkretan odnos i uslugu. Ako je potrebno, podnositelj može biti zamoljen za dodatne informacije radi razmatranja prigovora.</p>
+                <p>Prigovori i evidencija o njima čuvat će se tijekom razdoblja propisanog primjenjivim propisima, uključujući obvezu čuvanja evidencije o pisanim prigovorima kada je ona primjenjiva.</p>
+            </section>
 
-            <h3>How long do we retain your information?</h3>
-            <p>
-                Information is retained only for as long as necessary to handle
-                the enquiry and related communication. If a reservation is made,
-                certain information may be retained longer where required by law
-                or necessary for legal claims. Actual retention periods should
-                be determined according to the way the service operates and
-                applicable legal requirements.
-            </p>
+            <section class="legal-section" id="vanjske-usluge">
+                <h2>6. Vanjske usluge i pružatelji usluga</h2>
+                <p>Za rad stranice i povezane funkcionalnosti mogu se koristiti sljedeće usluge:</p>
+                <h3>GitHub Pages</h3>
+                <p>Internetska stranica objavljena je putem usluge GitHub Pages. Pružatelj usluge može obrađivati tehničke podatke potrebne za isporuku stranice, sigurnost i rad infrastrukture.</p>
+                <p>Pravila privatnosti: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+                <h3>Google Maps</h3>
+                <p>Na stranici lokacije ugrađena je Google Maps karta radi prikaza lokacije smještaja. Učitavanje karte može uzrokovati prijenos tehničkih podataka Googleu i obradu podataka u skladu s Googleovim pravilima.</p>
+                <p>Pravila privatnosti: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleova pravila privatnosti</a>.</p>
+                <h3>Resend</h3>
+                <p>Za tehničko slanje poruka iz kontakt-obrasca koristi se usluga Resend. Podaci potrebni za dostavu poruke mogu se obrađivati kroz ovu uslugu, uključujući određene tehničke zapise povezane sa slanjem e-pošte.</p>
+                <p>Pravila privatnosti: <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Resend Privacy Policy</a>.</p>
+                <p>Vanjski pružatelji usluga odgovorni su za obradu koju provode u skladu sa svojim pravilima i primjenjivim propisima. Stvarni opseg obrade i eventualni međunarodni prijenosi ovise o konfiguraciji usluga i njihovim važećim uvjetima.</p>
+            </section>
 
-            <h3>Recipients and technical processing</h3>
-            <p>
-                The accommodation provider has access to the information.
-                If hosting, email or other service providers process personal
-                data, such processing must comply with applicable data
-                protection requirements.
-            </p>
-            <p>
-                This website is published through GitHub Pages. Before
-                publication, the data potentially processed by the hosting
-                provider and other external services, including any
-                international data transfers, should be reviewed and
-                accurately described.
-            </p>
+            <section class="legal-section" id="autorska-prava">
+                <h2>7. Autorska prava</h2>
+                <p>Sadržaj ove internetske stranice, uključujući tekstove, vizualne elemente, dizajn i fotografije koje pripadaju iznajmljivaču ili se koriste uz odgovarajuće dopuštenje, zaštićen je primjenjivim propisima o autorskom pravu i drugim pravima intelektualnog vlasništva.</p>
+                <p>Umnožavanje, distribucija, javna objava ili druga uporaba sadržaja bez prethodnog dopuštenja nositelja prava nije dopuštena, osim u slučajevima dopuštenima zakonom.</p>
+                <p>Za pitanja o sadržaju stranice i dopuštenju za njegovu uporabu možete se javiti na: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
+            </section>
+            <a class="legal-back" href="index.html"><i class="ri-arrow-left-line"></i> Povratak na početnu stranicu</a>
+        </main>
+    </div>
 
-            <h3>Your Rights</h3>
-            <p>
-                Depending on the circumstances, you may request access to,
-                rectification, erasure or restriction of processing of your
-                personal data and exercise other rights available under the
-                GDPR. Send requests to: [ADD email address].
-            </p>
-            <p>
-                If you believe that your data is being processed unlawfully,
-                you may lodge a complaint with the Croatian Personal Data
-                Protection Agency (AZOP):
-                <a href="https://azop.hr/" target="_blank"
-                   rel="noopener noreferrer">azop.hr</a>.
-            </p>
+    <!-- ENGLISH -->
+    <div class="legal-language-content" data-content="en" data-no-translate hidden>
+        <header class="legal-hero">
+            <div class="container">
+                <p class="eyebrow">Mobilna kućica Al Mare · Murter</p>
+                <h1>Legal Information</h1>
+                <p class="mb-0">Information about privacy, cookies and the use of content on this website.</p>
+            </div>
+        </header>
+        <main class="legal-content">
+            <p class="legal-date">Last updated: 25 October 2026.</p>
+            <section class="legal-section" id="provider-en">
+                <h2>1. Accommodation Provider</h2>
+                <ul>
+                    <li><strong>Accommodation name:</strong> Mobilna kućica Al Mare</li>
+                    <li><strong>Status:</strong> Private accommodation provider – individual</li>
+                    <li><strong>Provider's name:</strong> Zoran Garma</li>
+                    <li><strong>Address:</strong> Turistička 1, Murter, Croatia</li>
+                    <li><strong>Email:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
+                    <li><strong>Accommodation location:</strong> Murter, Slanica Bay, Dalmatia, Croatia</li>
+                    <li><strong>Accommodation type:</strong> Mobile home</li>
+                    <li><strong>Accommodation category:</strong> Camp classification: Three stars</li>
+                </ul>
+            </section>
+            <section class="legal-section" id="privacy-en">
+                <h2>2. Privacy Policy</h2>
+                <p>Mobilna kućica Al Mare respects the privacy of website visitors and seeks to protect personal data submitted through the contact form or other forms of communication.</p>
+                <h3>What information do we collect?</h3>
+                <p>Through the contact form, we may receive the following information:</p>
+                <ul><li>name and surname</li><li>email address</li><li>telephone number, if provided</li><li>requested arrival and departure dates</li><li>number of guests</li><li>message content and any additional information voluntarily provided.</li></ul>
+                <p>Information is used to respond to enquiries, communicate with potential guests, discuss stay arrangements and, where applicable, comply with legal obligations.</p>
+                <h3>Legal basis for processing</h3>
+                <p>Information is processed where necessary to take steps at the user's request before a possible agreement, to comply with applicable legal obligations, or on another appropriate legal basis depending on the purpose of processing.</p>
+                <h3>How long do we keep information?</h3>
+                <p>Enquiry information where no stay is subsequently agreed is intended to be retained for no longer than 12 months after the last communication, after which it is deleted or anonymised, unless a legal obligation or the establishment, exercise or defence of legal claims justifies longer retention.</p>
+                <p>Information relating to an agreed stay, accounting, statutory records or complaints may be retained for longer where required by applicable law or justified by the purpose of processing.</p>
+                <p>These retention periods describe the intended practice and must be followed in reality. External service providers may have separate retention periods for their technical logs.</p>
+                <h3>Service providers and recipients</h3>
+                <p>External providers, including GitHub Pages, Google Maps and Resend, may be used to operate the website and send messages. These providers may process certain technical information or data needed to provide their services.</p>
+                <p>Personal data is not sold to third parties. Information may be disclosed to competent authorities where required by law or necessary to protect legal interests.</p>
+                <p>Depending on the service and its infrastructure, processing may take place outside the European Economic Area. Appropriate safeguards are used where required by law.</p>
+                <h3>Your rights</h3>
+                <p>Under applicable data protection law, you may request access to your personal data, correction of inaccurate information, erasure or restriction of processing where the relevant conditions are met, and object to processing where applicable.</p>
+                <p>For privacy requests and questions, contact: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
+                <p>You also have the right to lodge a complaint with the competent data protection supervisory authority, the Croatian Personal Data Protection Agency (AZOP).</p>
+            </section>
+            <section class="legal-section" id="cookies-en">
+                <h2>3. Cookies and Similar Technologies</h2>
+                <p>This website uses technical functionality required to display and operate the site. Depending on configuration and the services used, cookies or similar technologies may be used.</p>
+                <p>The website may include an embedded Google Maps map to show the accommodation location. Loading this content may involve processing technical information and setting cookies by the service provider, depending on browser settings and how the map is loaded.</p>
+                <p>At the time this information was prepared, it had not been confirmed whether additional analytics or marketing cookies are used. The actual configuration must be checked before this cookie policy is considered final.</p>
+                <p>If cookies that are not necessary for the website to operate are used, appropriate notice and prior consent must be provided where legally required.</p>
+            </section>
+            <section class="legal-section" id="reservations-en">
+                <h2>4. Enquiries and Stay Arrangements</h2>
+                <p>Visitors may use this website to enquire about accommodation availability and preferred stay dates.</p>
+                <p>Submitting the contact form <strong>does not automatically confirm a reservation</strong>. After receiving an enquiry, the accommodation provider will contact the visitor to check availability and discuss the details of the stay.</p>
+                <p>A reservation is considered agreed only after subsequent confirmation and agreement between the visitor and the accommodation provider. Payment, arrival, departure and other details are arranged directly with the provider.</p>
+                <p>Visitors should provide accurate information needed to handle the enquiry. Information is used for the purposes described in this privacy policy.</p>
+            </section>
+            <section class="legal-section" id="complaints-en">
+                <h2>5. Written Consumer Complaints</h2>
+                <p>Consumers may submit a written complaint about accommodation services or other matters related to the provision of the service.</p>
+                <p>Complaints may be sent:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
+                    <li><strong>By post:</strong> Zoran Garma, Turistička 1, Murter, Croatia</li>
+                    <li><strong>Contact telephone:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
+                </ul>
+                <p>To help us process a complaint, please include your name, contact details, a description of the issue and relevant information about the agreed stay.</p>
+                <p>We will respond to a written complaint in writing within the statutory period of <strong>15 days from receipt</strong>, where this obligation applies to the specific relationship and service. We may ask for additional information if needed to review the complaint.</p>
+                <p>Complaints and records relating to them will be retained for the period required by applicable law, including any applicable obligation to keep records of written complaints.</p>
+            </section>
+            <section class="legal-section" id="services-en">
+                <h2>6. External Services and Providers</h2>
+                <p>The following services may be used to operate the website and its related features:</p>
+                <h3>GitHub Pages</h3>
+                <p>The website is published using GitHub Pages. The provider may process technical information required to deliver the website, maintain security and operate its infrastructure.</p>
+                <p>Privacy policy: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+                <h3>Google Maps</h3>
+                <p>An embedded Google Maps map is used on the location page to show the accommodation location. Loading the map may transfer technical information to Google and involve processing under Google's policies.</p>
+                <p>Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+                <h3>Resend</h3>
+                <p>The Resend service is used to send messages submitted through the contact form. Information needed to deliver messages may be processed through this service, including technical logs related to email delivery.</p>
+                <p>Privacy policy: <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Resend Privacy Policy</a>.</p>
+                <p>External providers are responsible for the processing they carry out under their own policies and applicable law. The actual scope of processing and any international transfers depend on service configuration and current terms.</p>
+            </section>
+            <section class="legal-section" id="copyright-en">
+                <h2>7. Copyright</h2>
+                <p>Content on this website, including text, visual elements, design and photographs owned by the accommodation provider or used with appropriate permission, is protected by applicable copyright and other intellectual property laws.</p>
+                <p>Reproduction, distribution, public display or other use of content without prior permission from the rights holder is not permitted, except where allowed by law.</p>
+                <p>For questions about website content or permission to use it, contact: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
+            </section>
+            <a class="legal-back" href="index.html"><i class="ri-arrow-left-line"></i> Back to homepage</a>
+        </main>
+    </div>
 
-            <h3>Data Security</h3>
-            <p>
-                Appropriate measures are taken to protect personal data.
-                The adequacy of these measures should be assessed against the
-                actual methods used to collect, transmit and store information.
-            </p>
-        </section>
+    <!-- DEUTSCH -->
+    <div class="legal-language-content" data-content="de" data-no-translate hidden>
+        <header class="legal-hero">
+            <div class="container">
+                <p class="eyebrow">Mobilna kućica Al Mare · Murter</p>
+                <h1>Rechtliche Informationen</h1>
+                <p class="mb-0">Informationen zum Datenschutz, zu Cookies und zur Nutzung der Inhalte dieser Website.</p>
+            </div>
+        </header>
+        <main class="legal-content">
+            <p class="legal-date">Letzte Aktualisierung: 25. Oktober 2026.</p>
+            <section class="legal-section" id="anbieter-de">
+                <h2>1. Angaben zum Unterkunftsanbieter</h2>
+                <ul>
+                    <li><strong>Name der Unterkunft:</strong> Mobilna kućica Al Mare</li>
+                    <li><strong>Status:</strong> Privater Unterkunftsanbieter – natürliche Person</li>
+                    <li><strong>Name des Anbieters:</strong> Zoran Garma</li>
+                    <li><strong>Adresse:</strong> Turistička 1, Murter, Kroatien</li>
+                    <li><strong>E-Mail:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
+                    <li><strong>Telefon:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
+                    <li><strong>Lage der Unterkunft:</strong> Murter, Bucht Slanica, Dalmatien, Kroatien</li>
+                    <li><strong>Unterkunftsart:</strong> Mobilheim</li>
+                    <li><strong>Kategorie der Unterkunft:</strong> Kategorisierung des Campingplatzes: Drei Sterne</li>
+                </ul>
+            </section>
+            <section class="legal-section" id="datenschutz-de">
+                <h2>2. Datenschutzerklärung</h2>
+                <p>Mobilna kućica Al Mare respektiert die Privatsphäre der Websitebesucher und bemüht sich, personenbezogene Daten zu schützen, die über das Kontaktformular oder andere Kommunikationswege übermittelt werden.</p>
+                <h3>Welche Daten erfassen wir?</h3>
+                <p>Über das Kontaktformular können wir folgende Angaben erhalten:</p>
+                <ul><li>Vor- und Nachname</li><li>E-Mail-Adresse</li><li>Telefonnummer, falls angegeben</li><li>gewünschtes An- und Abreisedatum</li><li>Anzahl der Gäste</li><li>Nachrichteninhalt und weitere freiwillig angegebene Informationen.</li></ul>
+                <p>Die Daten werden verwendet, um Anfragen zu beantworten, mit potenziellen Gästen zu kommunizieren, den Aufenthalt abzustimmen und gegebenenfalls gesetzliche Pflichten zu erfüllen.</p>
+                <h3>Rechtsgrundlage der Verarbeitung</h3>
+                <p>Die Daten werden verarbeitet, soweit dies erforderlich ist, um auf Wunsch des Nutzers vor einer möglichen Vereinbarung tätig zu werden, gesetzliche Pflichten zu erfüllen oder eine andere geeignete Rechtsgrundlage besteht, abhängig vom Verarbeitungszweck.</p>
+                <h3>Wie lange speichern wir die Daten?</h3>
+                <p>Anfragedaten, auf die keine Vereinbarung über einen Aufenthalt folgt, sollen höchstens 12 Monate nach der letzten Kommunikation gespeichert und danach gelöscht oder anonymisiert werden, sofern keine gesetzliche Pflicht oder ein berechtigter Bedarf zur längeren Speicherung für Rechtsansprüche besteht.</p>
+                <p>Daten zu vereinbarten Aufenthalten, zur Buchhaltung, zu gesetzlich vorgeschriebenen Aufzeichnungen oder zu Beschwerden können länger gespeichert werden, soweit dies gesetzlich vorgeschrieben oder für den Verarbeitungszweck gerechtfertigt ist.</p>
+                <p>Diese Fristen beschreiben die vorgesehene Praxis und müssen tatsächlich eingehalten werden. Externe Dienstleister können eigene Speicherfristen für technische Protokolle haben.</p>
+                <h3>Dienstleister und Empfänger</h3>
+                <p>Für den Betrieb der Website und den Versand von Nachrichten können externe Dienstleister eingesetzt werden, darunter GitHub Pages, Google Maps und Resend. Diese Anbieter können bestimmte technische Daten oder für ihre Dienste erforderliche Informationen verarbeiten.</p>
+                <p>Personenbezogene Daten werden nicht an Dritte verkauft. Daten können an zuständige Behörden weitergegeben werden, wenn dies gesetzlich vorgeschrieben oder zum Schutz rechtlicher Interessen erforderlich ist.</p>
+                <p>Je nach Dienst und dessen Infrastruktur kann eine Verarbeitung auch außerhalb des Europäischen Wirtschaftsraums stattfinden. Soweit gesetzlich erforderlich, werden geeignete Schutzmechanismen eingesetzt.</p>
+                <h3>Ihre Rechte</h3>
+                <p>Nach den geltenden Datenschutzvorschriften können Sie unter den jeweiligen Voraussetzungen Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten verlangen und gegebenenfalls Widerspruch gegen die Verarbeitung einlegen.</p>
+                <p>Bei Datenschutzfragen oder Anfragen kontaktieren Sie bitte: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
+                <p>Sie können außerdem eine Beschwerde bei der zuständigen Datenschutzaufsichtsbehörde, der kroatischen Datenschutzagentur (AZOP), einreichen.</p>
+            </section>
+            <section class="legal-section" id="cookies-de">
+                <h2>3. Cookies und ähnliche Technologien</h2>
+                <p>Diese Website verwendet technische Funktionen, die für die Darstellung und den Betrieb erforderlich sind. Je nach Konfiguration und verwendeten Diensten können Cookies oder ähnliche Technologien eingesetzt werden.</p>
+                <p>Die Website kann eine eingebettete Google-Maps-Karte zur Anzeige des Unterkunftsstandorts enthalten. Beim Laden solcher Inhalte können technische Daten verarbeitet und abhängig von den Browsereinstellungen und der Einbindung Cookies durch den Dienstanbieter gesetzt werden.</p>
+                <p>Zum Zeitpunkt der Erstellung dieser Informationen wurde nicht bestätigt, ob zusätzliche Analyse- oder Marketing-Cookies verwendet werden. Die tatsächliche Konfiguration muss überprüft werden, bevor diese Cookie-Informationen als endgültig gelten.</p>
+                <p>Wenn nicht notwendige Cookies eingesetzt werden, müssen Nutzer angemessen informiert werden und – soweit gesetzlich vorgeschrieben – vorab ihre Einwilligung erteilen.</p>
+            </section>
+            <section class="legal-section" id="aufenthalt-de">
+                <h2>4. Anfragen und Vereinbarung des Aufenthalts</h2>
+                <p>Über diese Website können Besucher Anfragen zur Verfügbarkeit der Unterkunft und zu gewünschten Aufenthaltsdaten senden.</p>
+                <p>Das Absenden des Kontaktformulars <strong>stellt keine automatische Buchungsbestätigung dar</strong>. Nach Eingang der Anfrage kontaktiert der Unterkunftsanbieter den Besucher, um die Verfügbarkeit zu prüfen und Einzelheiten des Aufenthalts zu vereinbaren.</p>
+                <p>Eine Buchung gilt erst nach einer anschließenden Bestätigung und Vereinbarung zwischen dem Besucher und dem Unterkunftsanbieter als vereinbart. Zahlungsbedingungen, Anreise, Abreise und weitere Einzelheiten werden direkt mit dem Anbieter abgestimmt.</p>
+                <p>Besucher sollten die für die Bearbeitung der Anfrage erforderlichen korrekten Angaben machen. Die Daten werden zu den in dieser Datenschutzerklärung beschriebenen Zwecken verwendet.</p>
+            </section>
+            <section class="legal-section" id="beschwerden-de">
+                <h2>5. Schriftliche Verbraucherbeschwerden</h2>
+                <p>Verbraucher können schriftliche Beschwerden zu Unterkunftsleistungen oder anderen Fragen im Zusammenhang mit der Dienstleistung einreichen.</p>
+                <p>Beschwerden können gesendet werden:</p>
+                <ul>
+                    <li><strong>Per E-Mail:</strong> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></li>
+                    <li><strong>Per Post:</strong> Zoran Garma, Turistička 1, Murter, Kroatien</li>
+                    <li><strong>Telefonischer Kontakt:</strong> <a href="tel:+385911923895">+385 91 192 3895</a></li>
+                </ul>
+                <p>Zur leichteren Bearbeitung sollte die Beschwerde den Namen, Kontaktdaten, eine Beschreibung des Anliegens und relevante Angaben zum vereinbarten Aufenthalt enthalten.</p>
+                <p>Wir beantworten schriftliche Beschwerden innerhalb der gesetzlichen Frist von <strong>15 Tagen nach Eingang</strong>, sofern diese Verpflichtung auf das konkrete Verhältnis und die Dienstleistung anwendbar ist. Bei Bedarf können weitere Informationen angefordert werden.</p>
+                <p>Beschwerden und die dazugehörigen Aufzeichnungen werden so lange aufbewahrt, wie es die geltenden Vorschriften vorsehen, einschließlich einer gegebenenfalls geltenden Pflicht zur Führung von Aufzeichnungen über schriftliche Beschwerden.</p>
+            </section>
+            <section class="legal-section" id="dienste-de">
+                <h2>6. Externe Dienste und Dienstleister</h2>
+                <p>Für den Betrieb der Website und zugehörige Funktionen können folgende Dienste verwendet werden:</p>
+                <h3>GitHub Pages</h3>
+                <p>Die Website wird über GitHub Pages veröffentlicht. Der Anbieter kann technische Daten verarbeiten, die zur Bereitstellung der Website, zur Sicherheit und zum Betrieb der Infrastruktur erforderlich sind.</p>
+                <p>Datenschutzerklärung: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+                <h3>Google Maps</h3>
+                <p>Auf der Standortseite ist eine Google-Maps-Karte eingebunden, um die Lage der Unterkunft anzuzeigen. Beim Laden der Karte können technische Daten an Google übertragen und gemäß den Google-Richtlinien verarbeitet werden.</p>
+                <p>Datenschutzerklärung: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google-Datenschutzerklärung</a>.</p>
+                <h3>Resend</h3>
+                <p>Für den technischen Versand von Nachrichten aus dem Kontaktformular wird Resend verwendet. Für die Zustellung erforderliche Daten können über diesen Dienst verarbeitet werden, einschließlich technischer Protokolle zum E-Mail-Versand.</p>
+                <p>Datenschutzerklärung: <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Resend Privacy Policy</a>.</p>
+                <p>Externe Dienstleister sind für die Verarbeitung verantwortlich, die sie nach ihren eigenen Richtlinien und den geltenden Vorschriften durchführen. Der tatsächliche Umfang der Verarbeitung und mögliche internationale Übermittlungen hängen von der Konfiguration und den aktuellen Bedingungen der Dienste ab.</p>
+            </section>
+            <section class="legal-section" id="urheberrecht-de">
+                <h2>7. Urheberrecht</h2>
+                <p>Die Inhalte dieser Website, einschließlich Texte, visueller Elemente, Design und Fotos, die dem Unterkunftsanbieter gehören oder mit entsprechender Genehmigung verwendet werden, sind durch geltendes Urheberrecht und andere Rechte des geistigen Eigentums geschützt.</p>
+                <p>Vervielfältigung, Verbreitung, öffentliche Wiedergabe oder sonstige Nutzung der Inhalte ohne vorherige Zustimmung des Rechteinhabers ist nicht gestattet, außer in gesetzlich zulässigen Fällen.</p>
+                <p>Bei Fragen zu Website-Inhalten oder zur Genehmigung ihrer Nutzung kontaktieren Sie bitte: <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>.</p>
+            </section>
+            <a class="legal-back" href="index.html"><i class="ri-arrow-left-line"></i> Zurück zur Startseite</a>
+        </main>
+    </div>
 
-        <section class="legal-section" id="cookies-en">
-            <h2>3. Cookies and Similar Technologies</h2>
-            <p>
-                Cookies are small files that a website may store on your
-                device. They can support essential website functions, remember
-                preferences, or be used for analytics and advertising.
-            </p>
-            <p>
-                An initial review has not confirmed the use of analytics or
-                marketing cookies. However, this does not conclusively establish
-                that such cookies are absent from every page or under all
-                conditions of use.
-            </p>
-            <p>
-                Cookies, local storage and external scripts should be checked
-                across all pages before publication. Technologies that legally
-                require prior consent must not be activated before valid consent
-                has been obtained.
-            </p>
-            <p>
-                This section should be updated after a technical review to
-                accurately reflect the website's actual configuration.
-            </p>
-        </section>
-
-        <section class="legal-section" id="reservations-en">
-            <h2>4. Enquiries and Arrangements for Stays</h2>
-            <p>
-                Submitting the contact form is an accommodation enquiry and
-                does not by itself mean that a reservation has been confirmed.
-                Availability, price, payment terms, length of stay and any
-                cancellation conditions are agreed upon subsequently with
-                the accommodation provider.
-            </p>
-            <p>
-                Specific stay conditions must be clearly communicated to the
-                guest before an agreement is concluded. This section does not
-                replace individual reservation terms or mandatory information
-                applicable to accommodation services.
-            </p>
-        </section>
-
-        <section class="legal-section" id="copyright-en">
-            <h2>5. Copyright</h2>
-            <p>
-                Text, design and other content on this website may be protected
-                by copyright or other intellectual property rights.
-            </p>
-            <p>
-                Photographs and materials belonging to third parties may be
-                subject to separate rights and licences. They may only be used,
-                downloaded or republished where an appropriate legal basis or
-                permission exists.
-            </p>
-            <p>
-                © 2026 Mobilna kućica Al Mare. All rights reserved to the extent
-                that the relevant rights belong to the respective rights holder.
-            </p>
-        </section>
-
-        <a class="legal-back" href="index.html">
-            <i class="ri-arrow-left-line"></i>
-            Back to Homepage
-        </a>
-
-    </main>
-</div>
     <!-- PODNOŽJE -->
     <footer class="site-footer" id="footer">
         <div class="container">
@@ -488,42 +375,52 @@
                 <div class="col-lg-6">
                     <a href="index.html" class="footer-brand">AL MARE</a>
                     <p class="footer-subtitle">MEDITERRANEAN MOBILE HOME</p>
-                    <p class="footer-description">
-                        Vaš kutak za odmor, opuštanje i uživanje
-                        u ljepotama Jadrana.
-                    </p>
+                    <p class="footer-description" data-no-translate>Vaš kutak za odmor, opuštanje i uživanje u ljepotama Jadrana.</p>
                 </div>
-
                 <div class="col-lg-6">
                     <h3 class="footer-heading">Kontakt</h3>
-                    <p class="footer-contact-item">
-                        <i class="ri-phone-line"></i>
-                        <a href="tel:+385911923895">+385 91 192 3895</a>
-                    </p>
-                    <p class="footer-contact-item">
-                        <i class="ri-map-pin-line"></i>
-                        Murter, Hrvatska
-                    </p>
-                    <p class="footer-contact-item">
-                        <i class="ri-mail-line"></i>
-                        <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a>
-                    </p>
+                    <p class="footer-contact-item"><i class="ri-phone-line"></i> <a href="tel:+385911923895">+385 91 192 3895</a></p>
+                    <p class="footer-contact-item"><i class="ri-map-pin-line"></i> Murter, Hrvatska</p>
+                    <p class="footer-contact-item"><i class="ri-mail-line"></i> <a href="mailto:al.mare.murter@gmail.com">al.mare.murter@gmail.com</a></p>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>© 2026 Mobilna kućica Al Mare. Sva prava pridržana.</p>
-                <p>
-                    <a href="pravne-informacije.html">
-                        Pravne informacije
-                    </a>
-                </p>
+                <p><a href="pravne-informacije.html">Pravne informacije</a></p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="translations.js"></script>
+    <script>
+        (function () {
+            function showLegalLanguage(language) {
+                if (!["hr", "en", "de"].includes(language)) language = "hr";
+                document.querySelectorAll(".legal-language-content[data-content]").forEach(function (block) {
+                    block.hidden = block.dataset.content !== language;
+                });
+                document.documentElement.lang = language;
+
+                // Footer opis prevodimo odvojeno kako se ne bi prikazao njemački tekst na EN jeziku.
+                var footerDescription = document.querySelector(".footer-description");
+                if (footerDescription) {
+                    var footerTranslations = {
+                        hr: "Vaš kutak za odmor, opuštanje i uživanje u ljepotama Jadrana.",
+                        en: "Your place to relax and enjoy the beauty of the Adriatic.",
+                        de: "Ihr Ort zum Entspannen und Genießen der Schönheit der Adria."
+                    };
+                    footerDescription.textContent = footerTranslations[language];
+                }
+            }
+
+            document.addEventListener("click", function (event) {
+                var button = event.target.closest("[data-almare-lang]");
+                if (button) showLegalLanguage(button.getAttribute("data-almare-lang"));
+            });
+
+            showLegalLanguage(localStorage.getItem("alMareLanguage") || "hr");
+        })();
+    </script>
 </body>
 </html>
-

@@ -94,6 +94,13 @@
       "Datum dolaska": "Arrival date",
       "Datum odlaska": "Departure date",
       "Broj gostiju": "Number of guests",
+      "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. All rights reserved.",
+      "Slanjem upita potvrđujete da ste upoznati s našim":
+  "By submitting an enquiry, you confirm that you have read our",
+"Pravilima privatnosti": "Privacy Policy",
+"Vaši osobni podaci koristit će se isključivo za obradu upita i komunikaciju u vezi sa smještajem, osim kada postoji druga odgovarajuća pravna osnova.":
+  "Your personal data will be used solely to process your enquiry and communicate with you about the accommodation, unless another appropriate legal basis applies.",
+"privacyNoticeEnd": "Your personal data will be used solely to process your enquiry and communicate with you about the accommodation, unless another appropriate legal basis applies.",
       "Odaberite broj gostiju": "Select the number of guests",
       "Poruka": "Message",
       "Napišite nam svoje pitanje...": "Write your question here...",
@@ -107,14 +114,14 @@
       "Natrag na vrh": "Back to top",
       "Murter, Hrvatska": "Murter, Croatia",
       "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. All rights reserved.",
-      "© 2026 Apartmani Al Mare. Sva prava pridržana.": "© 2026 Al Mare Apartments. All rights reserved.",
+
 
       "Pravne informacije": "Legal information",
       "Apartmani Al Mare · Murter": "Al Mare Apartments · Murter",
       "Informacije o privatnosti, kolačićima i korištenju sadržaja ove web-stranice.": "Information about privacy, cookies and the use of content on this website.",
-      "Zadnje ažuriranje: 21. listopada 2026.": "Last updated: 21 October 2026.",
+      "Zadnje ažuriranje: 25. listopada 2026.": "Last updated: 25 October 2026.",
       "1. Podaci o iznajmljivaču": "1. Host information",
-      "Ova web-stranica predstavlja smještaj pod nazivom Apartmani Al Mare. Upiti za boravak šalju se putem kontakt-obrasca, a detalji i eventualna rezervacija dogovaraju se naknadno s iznajmljivačem.": "This website presents accommodation offered as Al Mare Apartments. Stay enquiries are submitted through the contact form, while the details and any potential reservation are arranged with the host afterwards.",
+      "Ova web-stranica predstavlja smještaj pod nazivom Mobilna kućica Al Mare. Upiti za boravak šalju se putem kontakt-obrasca, a detalji i eventualna rezervacija dogovaraju se naknadno s iznajmljivačem.": "This website presents accommodation offered as Al Mare Mobile Home. Stay enquiries are submitted through the contact form, while the details and any potential reservation are arranged with the host afterwards.",
       "Status:": "Status:",
       "privatni iznajmljivač – fizička osoba": "private host – individual",
       "Ime i prezime:": "Full name:",
@@ -159,9 +166,9 @@
       "Pravne informacije": "Legal information",
       "Apartmani Al Mare · Murter": "Apartments Al Mare · Murter",
       "Informacije o privatnosti, kolačićima i korištenju sadržaja ove web-stranice.": "Informationen zu Datenschutz, Cookies und zur Nutzung der Inhalte dieser Website.",
-      "Zadnje ažuriranje: 21. listopada 2026.": "Zuletzt aktualisiert: 21. Oktober 2026.",
+      "Zadnje ažuriranje: 25. listopada 2026.": "Zuletzt aktualisiert: 25. Oktober 2026.",
       "1. Podaci o iznajmljivaču": "1. Angaben zum Gastgeber",
-      "Ova web-stranica predstavlja smještaj pod nazivom Apartmani Al Mare. Upiti za boravak šalju se putem kontakt-obrasca, a detalji i eventualna rezervacija dogovaraju se naknadno s iznajmljivačem.": "Diese Website präsentiert die Unterkunft Al Mare Apartments. Anfragen zum Aufenthalt werden über das Kontaktformular gesendet; Einzelheiten und eine mögliche Buchung werden anschließend mit dem Gastgeber vereinbart.",
+      "Ova web-stranica predstavlja smještaj pod nazivom Mobilna kućica Al Mare. Upiti za boravak šalju se putem kontakt-obrasca, a detalji i eventualna rezervacija dogovaraju se naknadno s iznajmljivačem.": "Diese Website präsentiert die Unterkunft Al Mare Mobile Home. Anfragen zum Aufenthalt werden über das Kontaktformular gesendet; Einzelheiten und eine mögliche Buchung werden anschließend mit dem Gastgeber vereinbart.",
       "Status:": "Status:",
       "privatni iznajmljivač – fizička osoba": "privater Gastgeber – natürliche Person",
       "Ime i prezime:": "Vor- und Nachname:",
@@ -264,8 +271,10 @@
         "Spend the day swimming, walking along the coast or simply enjoying the sea views. End the day by taking a moment to admire a Dalmatian sunset.",
       "Saznajte više o plaži Slanica": "Learn more about Slanica Beach",
       "Uživajte u moru, upoznajte lokalne okuse i istražite mjesta koja daju poseban karakter ovom dijelu Dalmacije.":
-        "Enjoy the sea, discover local flavours and explore the places that give this part of Dalmatia its special character."
-    },
+        "Enjoy the sea, discover local flavours and explore the places that give this part of Dalmatia its special character.",
+      "© 2026 Mobilna kućica Al Mare. Sva prava pridržana.":
+        "© 2026 Al Mare Mobile Home. All rights reserved.",
+      },
 
     de: {
       "Početna": "Startseite",
@@ -354,6 +363,12 @@
       "Datum dolaska": "Anreisedatum",
       "Datum odlaska": "Abreisedatum",
       "Broj gostiju": "Anzahl der Gäste",
+      "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. Alle Rechte vorbehalten.",
+      "Slanjem upita potvrđujete da ste upoznati s našim":
+  "Mit dem Absenden einer Anfrage bestätigen Sie, dass Sie unsere",
+"Pravilima privatnosti": "Datenschutzerklärung",
+"Vaši osobni podaci koristit će se isključivo za obradu upita i komunikaciju u vezi sa smještajem, osim kada postoji druga odgovarajuća pravna osnova.":
+  "Ihre personenbezogenen Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage und zur Kommunikation bezüglich der Unterkunft verwendet, sofern keine andere geeignete Rechtsgrundlage besteht.",
       "Odaberite broj gostiju": "Anzahl der Gäste auswählen",
       "Poruka": "Nachricht",
       "Napišite nam svoje pitanje...": "Schreiben Sie uns Ihre Frage ...",
@@ -366,7 +381,6 @@
       "Istražite": "Entdecken",
       "Natrag na vrh": "Zurück nach oben",
       "Murter, Hrvatska": "Murter, Kroatien",
-      "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. Alle Rechte vorbehalten.",
       "© 2026 Apartmani Al Mare. Sva prava pridržana.": "© 2026 Al Mare Apartments. Alle Rechte vorbehalten.",
       "Pravne informacije": "Rechtliche Informationen",
 
@@ -431,8 +445,10 @@
         "Verbringen Sie den Tag mit Schwimmen, einem Spaziergang an der Küste oder genießen Sie einfach den Meerblick. Lassen Sie den Tag mit einem dalmatinischen Sonnenuntergang ausklingen.",
       "Saznajte više o plaži Slanica": "Mehr über den Strand Slanica erfahren",
       "Uživajte u moru, upoznajte lokalne okuse i istražite mjesta koja daju poseban karakter ovom dijelu Dalmacije.":
-        "Genießen Sie das Meer, entdecken Sie regionale Spezialitäten und erkunden Sie die Orte, die diesem Teil Dalmatiens seinen besonderen Charakter verleihen."
-    }
+        "Genießen Sie das Meer, entdecken Sie regionale Spezialitäten und erkunden Sie die Orte, die diesem Teil Dalmatiens seinen besonderen Charakter verleihen.",
+    "© 2026 Mobilna kućica Al Mare. Sva prava pridržana.":
+    "© 2026 Mobilheim Al Mare. Alle Rechte vorbehalten.",
+      }
   };
 
   const originalText = new WeakMap();
@@ -562,27 +578,30 @@
     }
   }
 
-  function updateActiveLanguage(language) {
-    document.querySelectorAll("[data-almare-lang]").forEach(button => {
-      const active = button.dataset.almareLang === language;
+function updateLegalLanguage(language) {
+  const legalBlocks = document.querySelectorAll(
+    ".legal-language-content[data-content]"
+  );
 
-      button.classList.toggle("active", active);
-      button.setAttribute("aria-pressed", String(active));
-    });
+  if (!legalBlocks.length) return;
+
+  legalBlocks.forEach(block => {
+    block.hidden = block.dataset.content !== language;
+  });
+}
+function setLanguage(language) {
+  if (!["hr", "en", "de"].includes(language)) {
+    language = "hr";
   }
 
-  function setLanguage(language) {
-    if (!["hr", "en", "de"].includes(language)) {
-      language = "hr";
-    }
+  localStorage.setItem("alMareLanguage", language);
 
-    localStorage.setItem("alMareLanguage", language);
-
-    translateTextNodes(language);
-    translateAttributes(language);
-    translateDocumentMetadata(language);
-    updateActiveLanguage(language);
-  }
+  updateLegalLanguage(language);
+  translateTextNodes(language);
+  translateAttributes(language);
+  translateDocumentMetadata(language);
+  updateActiveLanguage(language);
+}
 
   function addLanguageSwitcher() {
     const navbar = document.querySelector(".navbar-nav");
@@ -716,7 +735,10 @@
     addLanguageStyles();
     addLanguageSwitcher();
 
-    setLanguage("hr");
+    setLanguage(
+    localStorage.getItem("alMareLanguage") || "hr"
+);
+
   }
 
   if (document.readyState === "loading") {
