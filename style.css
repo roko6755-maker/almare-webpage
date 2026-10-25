@@ -1593,3 +1593,22 @@ a {
     opacity: 0.4;
     font-size: 0.75rem;
 }
+
+.privacy-notice {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: #68745b;
+    text-align: center;
+}
+
+.privacy-notice a {
+    color: #245d69;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.privacy-notice a:hover {
+    color: #173d4b;
+}

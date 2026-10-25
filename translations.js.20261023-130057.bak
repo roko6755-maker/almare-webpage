@@ -15,7 +15,7 @@
       "Lokacija": "Location",
       "Kontakt": "Contact",
       "Rezervirajte boravak": "Book your stay",
-      "Otkrijte apartman": "Discover the mobile home",
+      "Otkrijte mobilnu kućicu": "Discover the mobile home",
       "Pošaljite upit": "Send an enquiry",
       "VAŠ MALI KUTAK MEDITERANA": "YOUR LITTLE MEDITERRANEAN ESCAPE",
       "Vaš odmor počinje ovdje.": "Your holiday starts here.",
@@ -89,7 +89,7 @@
       "Ispunite podatke i javite nam kada biste željeli posjetiti Al Mare.":
         "Fill in your details and let us know when you would like to visit Al Mare.",
       "Ime i prezime": "Full name",
-      "Vaše ime": "Your name",
+      "Vaše ime i prezime": "Your full name",
       "E-mail adresa": "Email address",
       "Datum dolaska": "Arrival date",
       "Datum odlaska": "Departure date",
@@ -156,7 +156,7 @@
       "Povratak na početnu stranicu": "Back to the homepage",
       "Vaš kutak za odmor, opuštanje i uživanje u ljepotama Jadrana.": "Your place to relax and enjoy the beauty of the Adriatic.",
 
-      "Pravne informacije": "Rechtliche Informationen",
+      "Pravne informacije": "Legal information",
       "Apartmani Al Mare · Murter": "Apartments Al Mare · Murter",
       "Informacije o privatnosti, kolačićima i korištenju sadržaja ove web-stranice.": "Informationen zu Datenschutz, Cookies und zur Nutzung der Inhalte dieser Website.",
       "Zadnje ažuriranje: 21. listopada 2026.": "Zuletzt aktualisiert: 21. Oktober 2026.",
@@ -274,7 +274,7 @@
       "Lokacija": "Lage",
       "Kontakt": "Kontakt",
       "Rezervirajte boravak": "Aufenthalt buchen",
-      "Otkrijte apartman": "Mobilheim entdecken",
+      "Otkrijte mobilnu kućicu": "Mobilheim entdecken",
       "Pošaljite upit": "Anfrage senden",
       "VAŠ MALI KUTAK MEDITERANA": "IHR KLEINES MEDITERRANES PARADIES",
       "Vaš odmor počinje ovdje.": "Ihr Urlaub beginnt hier.",
@@ -291,7 +291,7 @@
       "VAŠ DOM NA ODMORU": "IHR URLAUBSZUHAUSE",
       "Malo mediteranske čarolije, puno trenutaka za pamćenje.":
         "Ein wenig mediterrane Magie, viele unvergessliche Momente.",
-      "Apartman Al Mare osmišljen je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
+      "Mobilna kućica Al Mare osmišljen je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
         "Das Mobilheim Al Mare ist für alle gedacht, die eine Auszeit nehmen, Komfort genießen und die Schönheit der Adria erleben möchten.",
       "Uživajte u ugodnom ambijentu, opuštenoj atmosferi i detaljima inspiriranima Mediteranom. Bilo da planirate obiteljski odmor ili nekoliko dana daleko od svakodnevice, Al Mare pruža prostor za vaše najljepše ljetne uspomene.":
         "Genießen Sie das angenehme Ambiente, die entspannte Atmosphäre und die vom Mittelmeer inspirierten Details. Ob Sie einen Familienurlaub oder ein paar Tage fernab vom Alltag planen – Al Mare bietet den perfekten Rahmen für Ihre schönsten Sommererinnerungen.",
@@ -349,7 +349,7 @@
       "Ispunite podatke i javite nam kada biste željeli posjetiti Al Mare.":
         "Füllen Sie die Angaben aus und teilen Sie uns mit, wann Sie Al Mare besuchen möchten.",
       "Ime i prezime": "Vor- und Nachname",
-      "Vaše ime": "Ihr Name",
+      "Vaše ime i prezime": "Ihr vollständiger Name",
       "E-mail adresa": "E-Mail-Adresse",
       "Datum dolaska": "Anreisedatum",
       "Datum odlaska": "Abreisedatum",
@@ -368,6 +368,7 @@
       "Murter, Hrvatska": "Murter, Kroatien",
       "© 2026 Al Mare. Sva prava pridržana.": "© 2026 Al Mare. Alle Rechte vorbehalten.",
       "© 2026 Apartmani Al Mare. Sva prava pridržana.": "© 2026 Al Mare Apartments. Alle Rechte vorbehalten.",
+      "Pravne informacije": "Rechtliche Informationen",
 
       /* Galerija */
       "Istražite fotografije": "Fotos entdecken",
@@ -445,20 +446,20 @@
     en: {
       "Mobilna kućica Al Mare | Mediteranski odmor uz Jadran":
         "Mobile Home Al Mare | Mediterranean Holiday on the Adriatic",
-      "Lokacija | Apartmani Al Mare":
+      "Lokacija | Mobilna kućica Al Mare":
         "Location | Mobile Home Al Mare",
-      "Galerija | Apartmani Al Mare":
-        "Gallery | Al Mare Apartments",
-      "Pravne informacije | Apartmani Al Mare": "Legal information | Al Mare Apartments"
+      "Galerija | Mobilna kućica Al Mare":
+        "Gallery | Mobile Home Al Mare",
+      "Pravne informacije | Mobilna kućica Al Mare": "Legal information | Mobile Home Al Mare"
     },
     de: {
       "Mobilna kućica Al Mare | Mediteranski odmor uz Jadran":
         "Mobilheim Al Mare | Mediterraner Urlaub an der Adria",
-      "Lokacija | Apartmani Al Mare":
+      "Lokacija | Mobilna kućica Al Mare":
         "Lage | Mobilheim Al Mare",
-      "Galerija | Apartmani Al Mare":
-        "Galerie | Apartments Al Mare",
-      "Pravne informacije | Apartmani Al Mare": "Rechtliche Informationen | Apartments Al Mare"
+      "Galerija | Mobilna kućica Al Mare":
+        "Galerie | Mobile Home Al Mare",
+      "Pravne informacije | Mobilna kućica Al Mare": "Rechtliche Informationen | Mobile Home Al Mare"
     }
   };
 

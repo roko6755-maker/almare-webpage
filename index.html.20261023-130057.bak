@@ -39,7 +39,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
     <nav class="navbar navbar-expand-lg fixed-top modern-navbar">
         <div class="container">
 
-            <a class="navbar-brand" href="#pocetna" aria-label="Mobilna kućica Al Mare – početna">
+            <a class="navbar-brand" href="#pocetna" aria-label="Apartman Al Mare – početna">
                 <span class="brand-name">AL MARE</span>
                 <span class="brand-sub">MEDITERRANEAN MOBILE HOME</span>
             </a>
@@ -63,7 +63,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#o-apartmanu">Mobilna kućica</a>
+                        <a class="nav-link" href="#o-mobilnoj-kućici">Mobilna kućica</a>
                     </li>
 
                        <li class="nav-item">
@@ -129,12 +129,12 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     </p>
 
                     <div class="d-flex gap-3 flex-wrap hero-buttons">
-                        <a href="#o-apartmanu" class="btn btn-luxury-primary">
-                            Otkrijte apartman
+                        <a href="#o-mobilnoj-kućici" class="btn btn-luxury-primary">
+                            Otkrijte mobilnu kućicu
                             <i class="ri-arrow-right-line ms-2"></i>
                         </a>
 
-                        <a href="#kontakt-forma" class="btn btn-luxury-outline">
+                        <a href="#kontakt" class="btn btn-luxury-outline">
                             Pošaljite upit
                         </a>
                     </div>
@@ -186,8 +186,8 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
     </section>
 
 
-    <!-- O APARTMANU -->
-    <section id="o-apartmanu" class="section-details section-padding">
+    <!-- O MOBILNOJ KUĆICI -->
+    <section id="o-mobilnoj-kućici" class="section-details section-padding">
         <div class="container">
             <div class="row align-items-center g-5">
 
@@ -198,15 +198,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                         <!-- OVDJE POSTAVI SVOJU FOTOGRAFIJU -->
                         <img
                             src="interijer.jpeg"
-                            alt="Interijer Apartmana Al Mare"
+                            alt="Interijer Mobilne Kućice Al Mare"
                             class="img-fluid"
                             loading="lazy">
-
-                        <div class="price-badge-floating">
-                            <span class="badge-label">Cijena od</span>
-                            <span class="badge-amount">80 € / noć</span>
-                        </div>
-
                     </div>
                 </div>
 
@@ -223,7 +217,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     </h2>
 
                     <p class="section-lead">
-                        Apartman Al Mare osmišljen je za one koji žele
+                        Mobilna kućica Al Mare osmišljen je za one koji žele
                         predahnuti, uživati u udobnosti i doživjeti
                         ljepotu Jadrana.
                     </p>
@@ -280,7 +274,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
 
                     </div>
 
-                    <a href="#kontakt-forma" class="btn btn-luxury-primary mt-4">
+                    <a href="#kontakt" class="btn btn-luxury-primary mt-4">
                         Raspitajte se o terminima
                         <i class="ri-arrow-right-line ms-2"></i>
                     </a>
@@ -388,10 +382,10 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     <a href="prostor-opustanje.jpeg"
                        class="gallery-item gallery-large"
                        target="_blank"
-                       aria-label="Pogledajte fotografiju apartmana">
+                       aria-label="Pogledajte fotografiju mobilne kućice Al Mare">
 
                         <img src="prostor-opustanje.jpeg"
-                             alt="Dnevni prostor apartmana"
+                             alt="Dnevni prostor mobilne kućice"
                              loading="lazy">
 
                         <span class="gallery-caption">Prostor za opuštanje</span>
@@ -462,7 +456,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     apartmana za svoj sljedeći odmor.
                 </p>
 
-                <a href="#kontakt-forma" class="btn btn-luxury-light">
+                <a href="#kontakt" class="btn btn-luxury-light">
                     Dogovorimo vaš boravak
                     <i class="ri-arrow-right-up-line ms-2"></i>
                 </a>
@@ -491,7 +485,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     </h2>
 
                     <p class="section-description">
-                        Imate pitanje o apartmanu, cijenama ili
+                        Imate pitanje o mobilnoj kućici, cijenama ili
                         slobodnim terminima? Pošaljite nam upit.
                         Rado ćemo vam pomoći pri planiranju odmora.
                     </p>
@@ -520,7 +514,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                                        id="ime"
                                        name="name"
                                        class="form-control"
-                                       placeholder="Vaše ime"
+                                       placeholder="Vaše ime i prezime"
                                        autocomplete="name"
                                        required>
                             </div>
@@ -609,15 +603,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
 
                         </div>
 
-
-                        <p class="privacy-notice">
-                            Slanjem upita potvrđujete da ste upoznati s našim
-                            <a href="pravne-informacije.html">Pravilima privatnosti</a>.
-                            Vaši osobni podaci koristit će se za obradu upita
-                            i komunikaciju u vezi sa smještajem, u skladu s primjenjivim
-                            propisima o zaštiti osobnih podataka.
-                        </p>
-</form>
+                    </form>
 
                 </div>
             </div>
@@ -633,7 +619,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
                     AL MARE
                 </a>
                 <p class="footer-subtitle">
-                    MEDITERRANEAN APARTMENT
+                    MEDITERRANEAN MOBILE HOME
                 </p>
                 <p class="footer-description">
                     Vaš kutak za odmor, opuštanje i uživanje u ljepotama
@@ -674,9 +660,6 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
         Facebook
     </a>
 </p>
-<li>
-    <a href="pravne-informacije.html">Pravne informacije</a>
-</li>
 </div>
 
 <div class="col-lg-4 col-md-6">
@@ -684,10 +667,10 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.m
 
     <ul class="footer-links">
         <li><a href="index.html#pocetna">Početna</a></li>
-        <li><a href="index.html#o-apartmanu">Apartman</a></li>
+        <li><a href="index.html#o-mobilnoj-kućici">Mobilna kućica</a></li>
         <li><a href="galerija.html">Galerija</a></li>
         <li><a href="lokacija.html">Lokacija</a></li>
-            <li><a href="pravne-informacije.html">Pravne informacije</a></li>
+        <li><a href="pravne-informacije.html">Pravne informacije</a></li>
     </ul>
 
     <div class="footer-back-top">
@@ -839,56 +822,7 @@ if (contactForm) {
     });
 }
 </script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const bookingButtons = document.querySelectorAll(
-        'a[href="#kontakt-forma"].btn-luxury-outline, ' +
-        'a[href="#kontakt-forma"].btn-luxury-primary, ' +
-        'a[href="#kontakt-forma"].btn-luxury-light'
-    );
 
-    bookingButtons.forEach(function (button) {
-        button.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            const form = document.getElementById("kontakt-forma");
-            const navbarCollapse = document.getElementById("navbarNav");
-
-            if (!form) {
-                console.error("Nije pronađen obrazac #kontakt-forma.");
-                return;
-            }
-
-            function scrollToForm() {
-                form.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-
-                history.replaceState(null, "", "#kontakt-forma");
-            }
-
-            if (
-                window.innerWidth < 992 &&
-                navbarCollapse &&
-                navbarCollapse.classList.contains("show")
-            ) {
-                navbarCollapse.addEventListener(
-                    "hidden.bs.collapse",
-                    scrollToForm,
-                    { once: true }
-                );
-
-                bootstrap.Collapse
-                    .getOrCreateInstance(navbarCollapse)
-                    .hide();
-            } else {
-                scrollToForm();
-            }
-        });
-    });
-});
-</script>
 <script src="translations.js"></script>
 </body>
 </html>

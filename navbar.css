@@ -20,19 +20,23 @@
     text-decoration: none;
 }
 
+/* ISPRAVLJENO: Glavni naziv s elegantnim serifnim fontom */
 .modern-navbar .brand-name {
-    font-size: 1.65rem;
-    font-weight: 600;
-    letter-spacing: 3px;
+    font-family: "Playfair Display", serif !important; /* Dodan font */
+    font-size: 1.85rem;      /* Malo povećano */
+    font-weight: 500;        /* Tanji rez za eleganciju */
+    letter-spacing: 4.5px;   /* Veći razmak između slova */
+    color: #153f48;          /* Tamno plava boja */
 }
 
+/* ISPRAVLJENO: Podnaslov s proširenim slovima */
 .modern-navbar .brand-sub {
-    margin-top: 7px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.57rem;
-    font-weight: 600;
-    letter-spacing: 2.2px;
-    color: #81856a;
+    margin-top: 6px;
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 0.6rem;       /* Sitniji tekst */
+    font-weight: 600;        
+    letter-spacing: 3.2px;   /* Puno veći razmak između slova */
+    color: #81856a;          /* Maslinasta boja */
 }
 
 .modern-navbar .navbar-nav {
