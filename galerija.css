@@ -25,7 +25,7 @@ a { color: inherit; }
 .btn-book { background: var(--sea); color: white; border-radius: 2px; padding: 12px 18px; font-size: .78rem; font-weight: 700; letter-spacing: .4px; }
 .btn-book:hover { background: var(--sand); color: var(--sea-deep); }
 
-.gallery-hero { position: relative; min-height: 490px; display: flex; align-items: center; margin-top: 88px; color: white; background: linear-gradient(110deg, rgba(11,42,49,.83), rgba(11,42,49,.24)), url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=2000&q=85') center 55%/cover no-repeat; }
+.gallery-hero { position: relative; min-height: 490px; display: flex; align-items: center; margin-top: 88px; color: white; background: linear-gradient(110deg, rgba(11,42,49,.83), rgba(11,42,49,.24)), url('almare.jpeg') center 55%/cover no-repeat; }
 .gallery-hero-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,35,41,.3), transparent 65%); }
 .gallery-hero-content { position: relative; z-index: 1; padding-top: 70px; padding-bottom: 75px; }
 .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--sand); font-size: .72rem; letter-spacing: 2.4px; font-weight: 700; text-transform: uppercase; margin-bottom: 18px; }

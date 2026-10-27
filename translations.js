@@ -232,6 +232,30 @@
       "Javite nam se i raspitajte se o slobodnim terminima.":
         "Contact us to ask about available dates.",
       "Upit za rezervaciju": "Booking enquiry",
+      "Galerija | Mobilna kućica Al Mare": "Gallery | Mobile Home Al Mare",
+"Galerija": "Gallery",
+"Otkrijte mobilnu kućicu": "Discover the mobile home",
+"Mobilna kućica": "Mobile Home",
+"Kuhinja": "Kitchen",
+"Dnevni boravak": "Living room",
+"Terasa": "Terrace",
+"Spavaće sobe": "Bedrooms",
+"Kupaonica": "Bathroom",
+"Uvala Slanica": "Slanica Bay",
+"Zalazak sunca": "Sunset",
+"Brod": "Boat",
+"Prethodna fotografija": "Previous photo",
+"Sljedeća fotografija": "Next photo",
+"Zatvori galeriju": "Close gallery",
+"Naša mobilna kućica kroz fotografije.": "Our mobile home in photos.",
+"© 2026 Mobilna kućica Al Mare. Sva prava pridržana.": "© 2026 Al Mare Mobile Home. All rights reserved.",
+"Od udobnog interijera do ljetnih večeri na otvorenom — pogledajte Mobilnu kućicu Al Mare izbliza.": "From a comfortable interior to summer evenings outdoors — take a closer look at Al Mare Mobile Home.",
+"ZAVIRITE U AL MARE": "TAKE A LOOK INSIDE AL MARE",
+"Brod na Murteru": "Boat on Murter",
+"Obala": "Coast",
+"Murter": "Murter",
+"Obala i Murter": "Coast and Murter",
+"Mobilna kućica Al Mare. Sva prava pridržana.": "Al Mare Mobile Home. All rights reserved.",
 
       /* Lokacija */
       "OTOK MURTER · DALMACIJA": "MURTER ISLAND · DALMATIA",
@@ -383,6 +407,8 @@
       "Murter, Hrvatska": "Murter, Kroatien",
       "© 2026 Apartmani Al Mare. Sva prava pridržana.": "© 2026 Al Mare Apartments. Alle Rechte vorbehalten.",
       "Pravne informacije": "Rechtliche Informationen",
+      "© 2026 Mobilna kućica Al Mare. Sva prava pridržana.": "© 2026 Mobilheim Al Mare. Alle Rechte vorbehalten.",
+"Obala i Murter": "Küste und Murter",
 
       /* Galerija */
       "Istražite fotografije": "Fotos entdecken",
@@ -406,6 +432,29 @@
       "Javite nam se i raspitajte se o slobodnim terminima.":
         "Kontaktieren Sie uns und fragen Sie nach freien Terminen.",
       "Upit za rezervaciju": "Buchungsanfrage",
+      "Galerija | Mobilna kućica Al Mare": "Galerie | Mobile Home Al Mare",
+"Galerija": "Galerie",
+"Otkrijte mobilnu kućicu": "Entdecken Sie das Mobilheim",
+"Mobilna kućica": "Mobilheim",
+"Kuhinja": "Küche",
+"Dnevni boravak": "Wohnzimmer",
+"Terasa": "Terrasse",
+"Spavaće sobe": "Schlafzimmer",
+"Kupaonica": "Badezimmer",
+"Uvala Slanica": "Bucht Slanica",
+"Zalazak sunca": "Sonnenuntergang",
+"Brod": "Boot",
+"Prethodna fotografija": "Vorheriges Foto",
+"Sljedeća fotografija": "Nächstes Foto",
+"Zatvori galeriju": "Galerie schließen",
+"Naša mobilna kućica kroz fotografije.": "Unser Mobilheim in Bildern.",
+"© 2026 Mobilna kućica Al Mare. Sva prava pridržana.": "© 2026 Al Mare Mobilheim. Alle Rechte vorbehalten.",
+"Od udobnog interijera do ljetnih večeri na otvorenom — pogledajte Mobilnu kućicu Al Mare izbliza.": "Vom gemütlichen Innenbereich bis zu sommerlichen Abenden im Freien — entdecken Sie das Mobilheim Al Mare aus nächster Nähe.",
+"ZAVIRITE U AL MARE": "WERFEN SIE EINEN BLICK INS AL MARE",
+"Brod na Murteru": "Boot auf Murter",
+"Obala": "Küste",
+"Murter": "Murter",
+"Mobilna kućica Al Mare. Sva prava pridržana.": "Mobilheim Al Mare. Alle Rechte vorbehalten.",
 
       /* Lokacija */
       "OTOK MURTER · DALMACIJA": "INSEL MURTER · DALMATIEN",
@@ -589,6 +638,19 @@ function updateLegalLanguage(language) {
     block.hidden = block.dataset.content !== language;
   });
 }
+
+
+function updateActiveLanguage(language) {
+  document
+    .querySelectorAll(".almare-language-button")
+    .forEach(button => {
+      const isActive = button.dataset.almareLang === language;
+
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+}
+
 function setLanguage(language) {
   if (!["hr", "en", "de"].includes(language)) {
     language = "hr";
