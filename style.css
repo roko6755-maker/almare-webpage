@@ -1612,3 +1612,50 @@ a {
 .privacy-notice a:hover {
     color: #173d4b;
 }
+
+.home-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.92);
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 20px;
+}
+
+.home-lightbox.open {
+    display: flex;
+}
+
+.home-lightbox img {
+    display: block;
+    max-width: 95%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.home-lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.home-lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+body.home-lightbox-open {
+    overflow: hidden;
+}
