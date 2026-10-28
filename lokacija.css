@@ -561,3 +561,29 @@ body {
     color: var(--sea-deep);
     border-color: var(--sand);
 }
+
+.google-maps-consent {
+    margin: 22px 0 18px;
+    padding: 16px 18px;
+    background: #f7f4ec;
+    border-left: 4px solid #245d69;
+    border-radius: 8px;
+    color: #173d4b;
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.google-maps-consent p {
+    margin: 0 0 10px;
+}
+
+.google-maps-consent p:last-child {
+    margin-bottom: 0;
+}
+
+.google-maps-consent a {
+    color: #245d69;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

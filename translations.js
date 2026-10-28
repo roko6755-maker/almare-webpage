@@ -30,7 +30,7 @@
       "VAŠ DOM NA ODMORU": "YOUR HOLIDAY HOME",
       "Malo mediteranske čarolije, puno trenutaka za pamćenje.":
         "A little Mediterranean magic, a lifetime of memories.",
-      "Apartman Al Mare osmišljen je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
+      "Mobilna kućica Al Mare osmišljena je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
         "Mobile Home Al Mare is designed for those who want to unwind, enjoy comfort and experience the beauty of the Adriatic.",
       "Uživajte u ugodnom ambijentu, opuštenoj atmosferi i detaljima inspiriranima Mediteranom. Bilo da planirate obiteljski odmor ili nekoliko dana daleko od svakodnevice, Al Mare pruža prostor za vaše najljepše ljetne uspomene.":
         "Enjoy a welcoming atmosphere, a relaxed setting and details inspired by the Mediterranean. Whether you are planning a family holiday or a few days away from everyday life, Al Mare offers the perfect setting for your most beautiful summer memories.",
@@ -77,14 +77,14 @@
       "Dogovorimo vaš boravak": "Let's plan your stay",
       "JAVITE NAM SE": "GET IN TOUCH",
       "Vaše mjesto uz more vas čeka.": "Your place by the sea is waiting for you.",
-      "Imate pitanje o apartmanu, cijenama ili slobodnim terminima? Pošaljite nam upit. Rado ćemo vam pomoći pri planiranju odmora.":
+      "Imate pitanje o mobilnoj kućici, cijenama ili slobodnim terminima? Pošaljite nam upit. Rado ćemo vam pomoći pri planiranju odmora.":
         "Have a question about the mobile home, prices or availability? Send us an enquiry. We will be happy to help you plan your holiday.",
       "E-mail": "Email",
       "Telefon": "Phone",
       "Lokacija": "Location",
       "Ovdje upišite svoju e-mail adresu": "Enter your email address here",
       "Ovdje upišite svoj broj telefona": "Enter your phone number here",
-      "Ovdje upišite mjesto u kojem se apartman nalazi": "Enter the mobile home location here",
+      "Ovdje upišite mjesto u kojem se mobilna kućica nalazi": "Enter the mobile home location here",
       "Pošaljite upit za boravak": "Send a stay enquiry",
       "Ispunite podatke i javite nam kada biste željeli posjetiti Al Mare.":
         "Fill in your details and let us know when you would like to visit Al Mare.",
@@ -117,7 +117,7 @@
 
 
       "Pravne informacije": "Legal information",
-      "Apartmani Al Mare · Murter": "Al Mare Apartments · Murter",
+      "Mobilna kućica Al Mare · Murter": "Mobile Home Al Mare · Murter",
       "Informacije o privatnosti, kolačićima i korištenju sadržaja ove web-stranice.": "Information about privacy, cookies and the use of content on this website.",
       "Zadnje ažuriranje: 25. listopada 2026.": "Last updated: 25 October 2026.",
       "1. Podaci o iznajmljivaču": "1. Host information",
@@ -148,11 +148,38 @@
       "Ako smatrate da se vaši podaci obrađuju protivno propisima, možete podnijeti pritužbu Agenciji za zaštitu osobnih podataka (AZOP):": "If you believe your information is being processed unlawfully, you may lodge a complaint with the Croatian Personal Data Protection Agency (AZOP):",
       "Sigurnost podataka": "Data security",
       "Poduzimaju se primjerene mjere za zaštitu osobnih podataka. Opseg i primjerenost tih mjera potrebno je uskladiti sa stvarnim načinom prikupljanja, slanja i čuvanja podataka.": "Appropriate measures are taken to protect personal data. The scope and adequacy of these measures should reflect the actual methods used to collect, transmit and store information.",
-      "3. Kolačići i slične tehnologije": "3. Cookies and similar technologies",
-      "Kolačići su male datoteke koje web-stranica može pohraniti na vaš uređaj. Mogu služiti osnovnom radu stranice, pamćenju postavki, analitici ili oglašavanju.": "Cookies are small files that a website may store on your device. They may be used for essential website functions, remembering preferences, analytics or advertising.",
-      "U dosadašnjoj početnoj provjeri nije potvrđena uporaba analitičkih ili marketinških kolačića. To ne znači da je njihova odsutnost definitivno utvrđena na svim stranicama i u svim uvjetima korištenja.": "The initial review so far has not confirmed the use of analytics or marketing cookies. This does not mean their absence has been definitively established on every page and under all usage conditions.",
-      "Prije objave potrebno je provjeriti kolačiće, lokalnu pohranu i vanjske skripte na svim stranicama. Ako se koriste tehnologije koje zakonski zahtijevaju prethodnu privolu, one se ne smiju aktivirati prije davanja odgovarajuće privole.": "Before publication, check cookies, local storage and external scripts on all pages. If technologies requiring prior consent by law are used, they must not be activated before the appropriate consent is given.",
-      "Ovaj odjeljak treba ažurirati nakon tehničke provjere kako bi odgovarao stvarnoj konfiguraciji web-stranice.": "This section should be updated after a technical review so that it accurately reflects the website's actual configuration.",
+      // Cookies and Similar Technologies
+"cookiesTitle": "3. Cookies and Similar Technologies",
+
+"cookiesIntro": "The Mobile Home Al Mare website respects the privacy of its visitors and aims to limit the use of cookies and similar technologies to those necessary for the proper functioning of the website.",
+
+"cookiesTesting": "During technical testing in Google Chrome and Brave browsers, no cookies or data stored in Local Storage or Session Storage were found under the conditions tested.",
+
+"googleMapsTitle": "Google Maps",
+
+"googleMapsIntro": "The Location page uses Google Maps to display the accommodation's location and help visitors find their way around.",
+
+"googleMapsButtonInfo": "The interactive Google Map does not load automatically when the page is opened. Instead, visitors are shown a “Show Google Map” button, allowing them to decide whether they wish to load the map.",
+
+"googleMapsBeforeClick": "Before the button is selected, Google Maps content is not activated and no connection to Google's servers is established through the embedded map.",
+
+"googleMapsAfterClick": "By clicking the button, visitors enable Google Maps content to load, and their browser connects to Google's servers.",
+
+"googleMapsData": "During this process, Google may process certain technical data, including the IP address and information about the device and browser, and may use cookies or similar technologies in accordance with its privacy policy.",
+
+"googleMapsOptional": "Using the interactive map is not necessary to view the other content on the website.",
+
+"googlePrivacyLink": "More information about Google's data processing is available at:",
+
+"cookiesManagementTitle": "Managing Cookies",
+
+"cookiesManagement": "Visitors can manage cookies through their internet browser settings, including viewing, blocking and deleting them.",
+
+"cookiesConsentFuture": "If analytics, marketing or other cookies requiring consent are introduced on the website in the future, they will not be activated before the user's appropriate consent has been obtained.",
+
+"cookiesConsentOptions": "In that case, users will be able to accept, reject and withdraw their consent in accordance with applicable regulations.",
+
+"cookiesUpdates": "This information will be updated if the technologies and external services used on the website change.",
       "4. Upiti i dogovor boravka": "4. Enquiries and stay arrangements",
       "Slanje kontaktnog obrasca predstavlja upit za smještaj i samo po sebi ne znači da je rezervacija potvrđena. Raspoloživost, cijena, uvjeti plaćanja, trajanje boravka i eventualni uvjeti otkazivanja dogovaraju se naknadno s iznajmljivačem.": "Submitting the contact form is an accommodation enquiry and does not, by itself, mean that a reservation is confirmed. Availability, price, payment terms, length of stay and any cancellation terms are agreed with the host afterwards.",
       "Konkretni uvjeti boravka moraju biti jasno priopćeni gostu prije sklapanja dogovora. Ovaj odjeljak ne zamjenjuje pojedinačne uvjete rezervacije niti obvezne informacije koje se primjenjuju na pružanje smještaja.": "The specific conditions of the stay must be clearly communicated to the guest before an agreement is made. This section does not replace individual reservation terms or mandatory information applicable to the provision of accommodation.",
@@ -195,11 +222,38 @@
       "Ako smatrate da se vaši podaci obrađuju protivno propisima, možete podnijeti pritužbu Agenciji za zaštitu osobnih podataka (AZOP):": "Wenn Sie der Ansicht sind, dass Ihre Daten rechtswidrig verarbeitet werden, können Sie eine Beschwerde bei der kroatischen Datenschutzbehörde (AZOP) einreichen:",
       "Sigurnost podataka": "Datensicherheit",
       "Poduzimaju se primjerene mjere za zaštitu osobnih podataka. Opseg i primjerenost tih mjera potrebno je uskladiti sa stvarnim načinom prikupljanja, slanja i čuvanja podataka.": "Es werden angemessene Maßnahmen zum Schutz personenbezogener Daten getroffen. Umfang und Angemessenheit dieser Maßnahmen sollten den tatsächlichen Methoden der Erhebung, Übermittlung und Speicherung entsprechen.",
-      "3. Kolačići i slične tehnologije": "3. Cookies und ähnliche Technologien",
-      "Kolačići su male datoteke koje web-stranica može pohraniti na vaš uređaj. Mogu služiti osnovnom radu stranice, pamćenju postavki, analitici ili oglašavanju.": "Cookies sind kleine Dateien, die eine Website auf Ihrem Gerät speichern kann. Sie können für grundlegende Website-Funktionen, das Speichern von Einstellungen, Analysen oder Werbung verwendet werden.",
-      "U dosadašnjoj početnoj provjeri nije potvrđena uporaba analitičkih ili marketinških kolačića. To ne znači da je njihova odsutnost definitivno utvrđena na svim stranicama i u svim uvjetima korištenja.": "Bei der bisherigen ersten Prüfung wurde die Verwendung von Analyse- oder Marketing-Cookies nicht bestätigt. Das bedeutet nicht, dass ihre Abwesenheit auf allen Seiten und unter allen Nutzungsbedingungen endgültig festgestellt wurde.",
-      "Prije objave potrebno je provjeriti kolačiće, lokalnu pohranu i vanjske skripte na svim stranicama. Ako se koriste tehnologije koje zakonski zahtijevaju prethodnu privolu, one se ne smiju aktivirati prije davanja odgovarajuće privole.": "Vor der Veröffentlichung müssen Cookies, lokaler Speicher und externe Skripte auf allen Seiten überprüft werden. Technologien, für die gesetzlich eine vorherige Einwilligung erforderlich ist, dürfen erst nach Erteilung der entsprechenden Einwilligung aktiviert werden.",
-      "Ovaj odjeljak treba ažurirati nakon tehničke provjere kako bi odgovarao stvarnoj konfiguraciji web-stranice.": "Dieser Abschnitt sollte nach einer technischen Prüfung aktualisiert werden, damit er der tatsächlichen Konfiguration der Website entspricht.",
+      // Cookies und ähnliche Technologien
+"cookiesTitle": "3. Cookies und ähnliche Technologien",
+
+"cookiesIntro": "Die Website Mobilna kućica Al Mare respektiert die Privatsphäre ihrer Besucher und bemüht sich, die Verwendung von Cookies und ähnlichen Technologien auf das für das ordnungsgemäße Funktionieren der Website Notwendige zu beschränken.",
+
+"cookiesTesting": "Bei technischen Tests in den Browsern Google Chrome und Brave wurden unter den geprüften Bedingungen keine Cookies und keine in Local Storage oder Session Storage gespeicherten Daten festgestellt.",
+
+"googleMapsTitle": "Google Maps",
+
+"googleMapsIntro": "Auf der Seite Standort wird Google Maps verwendet, um die Lage der Unterkunft anzuzeigen und Besuchern die Orientierung zu erleichtern.",
+
+"googleMapsButtonInfo": "Die interaktive Google-Karte wird beim Öffnen der Seite nicht automatisch geladen. Stattdessen wird Besuchern eine Schaltfläche „Google-Karte anzeigen“ angezeigt, über die sie selbst entscheiden können, ob sie die Karte laden möchten.",
+
+"googleMapsBeforeClick": "Vor dem Anklicken der Schaltfläche sind die Google-Maps-Inhalte nicht aktiviert. Über die eingebettete Karte wird keine Verbindung zu den Servern von Google hergestellt.",
+
+"googleMapsAfterClick": "Durch Anklicken der Schaltfläche wird das Laden der Google-Maps-Inhalte ermöglicht, wobei sich der Browser des Besuchers mit den Servern von Google verbindet.",
+
+"googleMapsData": "Während dieses Vorgangs kann Google bestimmte technische Daten verarbeiten, darunter die IP-Adresse sowie Informationen über das Gerät und den Browser, und gemäß seiner Datenschutzerklärung Cookies oder ähnliche Technologien verwenden.",
+
+"googleMapsOptional": "Die Nutzung der interaktiven Karte ist für die Anzeige der übrigen Inhalte der Website nicht erforderlich.",
+
+"googlePrivacyLink": "Weitere Informationen zur Datenverarbeitung durch Google finden Sie unter:",
+
+"cookiesManagementTitle": "Verwaltung von Cookies",
+
+"cookiesManagement": "Besucher können Cookies über die Einstellungen ihres Internetbrowsers verwalten, einschließlich des Anzeigens, Blockierens und Löschens von Cookies.",
+
+"cookiesConsentFuture": "Sollten künftig Analyse-, Marketing- oder andere zustimmungspflichtige Cookies auf der Website eingesetzt werden, werden diese erst aktiviert, nachdem die entsprechende Einwilligung des Nutzers eingeholt wurde.",
+
+"cookiesConsentOptions": "In diesem Fall können Nutzer ihre Einwilligung gemäß den geltenden Vorschriften erteilen, ablehnen und widerrufen.",
+
+"cookiesUpdates": "Diese Informationen werden aktualisiert, wenn sich die auf der Website verwendeten Technologien oder externen Dienste ändern.",
       "4. Upiti i dogovor boravka": "4. Anfragen und Aufenthaltsvereinbarung",
       "Slanje kontaktnog obrasca predstavlja upit za smještaj i samo po sebi ne znači da je rezervacija potvrđena. Raspoloživost, cijena, uvjeti plaćanja, trajanje boravka i eventualni uvjeti otkazivanja dogovaraju se naknadno s iznajmljivačem.": "Das Absenden des Kontaktformulars ist eine Unterkunftsanfrage und bedeutet nicht automatisch, dass eine Buchung bestätigt wurde. Verfügbarkeit, Preis, Zahlungsbedingungen, Aufenthaltsdauer und mögliche Stornierungsbedingungen werden anschließend mit dem Gastgeber vereinbart.",
       "Konkretni uvjeti boravka moraju biti jasno priopćeni gostu prije sklapanja dogovora. Ovaj odjeljak ne zamjenjuje pojedinačne uvjete rezervacije niti obvezne informacije koje se primjenjuju na pružanje smještaja.": "Die konkreten Aufenthaltsbedingungen müssen dem Gast vor Abschluss einer Vereinbarung klar mitgeteilt werden. Dieser Abschnitt ersetzt weder individuelle Buchungsbedingungen noch verpflichtende Informationen für die Bereitstellung von Unterkünften.",
@@ -267,7 +321,8 @@
       "otoka Murtera": "Murter Island",
       "Pronađite nas na karti": "Find us on the map",
       "ISTRAŽITE OKOLICU": "EXPLORE THE AREA",
-      "Uvala Slanica": "Slanica Cove",
+      "Uvala Slanica –":
+    "Slanica Bay –",
       "Otvori Google Maps": "Open Google Maps",
       "MORE I PLAŽE": "SEA AND BEACHES",
       "vaš kutak uz more": "your place by the sea",
@@ -280,7 +335,13 @@
       "Doživite Murter svojim tempom.": "Experience Murter at your own pace.",
       "Uživajte u moru, suncu i opuštenom mediteranskom načinu života.":
         "Enjoy the sea, sunshine and relaxed Mediterranean lifestyle.",
-      "Vaš mediteranski odmor počinje ovdje.": "Your Mediterranean holiday starts here.",
+        "Otkrijte Slanicu i druge uvale otoka, idealne za kupanje i opuštanje uz more.":
+    "Discover Slanica Bay and the island's other coves, ideal for swimming and relaxing by the sea.",
+     "Istražite obalu, uživajte u plovidbi i upoznajte prirodne ljepote murterskog arhipelaga.":
+    "Explore the coastline, enjoy boating and discover the natural beauty of the Murter archipelago.",
+    "Kušajte lokalne specijalitete, svježu ribu i mediteransku kuhinju u ugodnom otočnom ambijentu.":
+    "Taste local specialities, fresh fish and Mediterranean cuisine in a pleasant island setting.",
+    "Vaš mediteranski odmor počinje ovdje.": "Your Mediterranean holiday starts here.",
       "Otkrijte čaroliju Murtera, miris borova, kristalno more i nezaboravne zalaske sunca. Vaš odmor uz Jadran počinje upravo ovdje.":
         "Discover the magic of Murter, the scent of pine trees, crystal-clear waters and unforgettable sunsets. Your Adriatic holiday begins right here.",
       "Murter je dalmatinski otok poznat po lijepim plažama, čistom moru, mediteranskom ugođaju i pogledu prema Kornatima. Idealno je mjesto za opušten odmor, istraživanje obale i uživanje u lokalnoj gastronomiji.":
@@ -294,10 +355,25 @@
       "Provedite dan kupajući se, šetajući uz obalu ili jednostavno uživajući u pogledu na more. Za kraj dana odvojite trenutak za dalmatinski zalazak sunca.":
         "Spend the day swimming, walking along the coast or simply enjoying the sea views. End the day by taking a moment to admire a Dalmatian sunset.",
       "Saznajte više o plaži Slanica": "Learn more about Slanica Beach",
+
+"Kontaktirajte nas":
+    "Contact us ",
       "Uživajte u moru, upoznajte lokalne okuse i istražite mjesta koja daju poseban karakter ovom dijelu Dalmacije.":
         "Enjoy the sea, discover local flavours and explore the places that give this part of Dalmatia its special character.",
       "© 2026 Mobilna kućica Al Mare. Sva prava pridržana.":
         "© 2026 Al Mare Mobile Home. All rights reserved.",
+
+"Više informacija dostupno je u":
+    "More information is available in",
+
+"Googleovim pravilima privatnosti":
+    "Google's Privacy Policy",
+
+    "MOBILNA KUĆICA · MURTER":
+    "MOBILE HOME · MURTER",
+
+    "Za prikaz interaktivne karte koristi se usluga Google Maps. Klikom na gumb „Otvori Google Maps” pristajete na učitavanje sadržaja s Googleovih poslužitelja, pri čemu se mogu obrađivati vaši osobni i tehnički podaci.":
+    "Google Maps is used to display the interactive map. By clicking the “Open Google Maps” button, you agree to load content from Google's servers, which may involve the processing of your personal and technical data.",
       },
 
     de: {
@@ -324,7 +400,7 @@
       "VAŠ DOM NA ODMORU": "IHR URLAUBSZUHAUSE",
       "Malo mediteranske čarolije, puno trenutaka za pamćenje.":
         "Ein wenig mediterrane Magie, viele unvergessliche Momente.",
-      "Mobilna kućica Al Mare osmišljen je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
+      "Mobilna kućica Al Mare osmišljena je za one koji žele predahnuti, uživati u udobnosti i doživjeti ljepotu Jadrana.":
         "Das Mobilheim Al Mare ist für alle gedacht, die eine Auszeit nehmen, Komfort genießen und die Schönheit der Adria erleben möchten.",
       "Uživajte u ugodnom ambijentu, opuštenoj atmosferi i detaljima inspiriranima Mediteranom. Bilo da planirate obiteljski odmor ili nekoliko dana daleko od svakodnevice, Al Mare pruža prostor za vaše najljepše ljetne uspomene.":
         "Genießen Sie das angenehme Ambiente, die entspannte Atmosphäre und die vom Mittelmeer inspirierten Details. Ob Sie einen Familienurlaub oder ein paar Tage fernab vom Alltag planen – Al Mare bietet den perfekten Rahmen für Ihre schönsten Sommererinnerungen.",
@@ -409,6 +485,8 @@
       "Pravne informacije": "Rechtliche Informationen",
       "© 2026 Mobilna kućica Al Mare. Sva prava pridržana.": "© 2026 Mobilheim Al Mare. Alle Rechte vorbehalten.",
 "Obala i Murter": "Küste und Murter",
+"Imate pitanje o mobilnoj kućici, cijenama ili slobodnim terminima? Pošaljite nam upit. Rado ćemo vam pomoći pri planiranju odmora.":
+    "Haben Sie Fragen zum Mobilheim, zu den Preisen oder zu verfügbaren Terminen? Senden Sie uns eine Anfrage. Wir helfen Ihnen gerne bei der Planung Ihres Urlaubs.",
 
       /* Galerija */
       "Istražite fotografije": "Fotos entdecken",
@@ -466,7 +544,8 @@
       "otoka Murtera": "der Insel Murter",
       "Pronađite nas na karti": "Finden Sie uns auf der Karte",
       "ISTRAŽITE OKOLICU": "ENTDECKEN SIE DIE UMGEBUNG",
-      "Uvala Slanica": "Bucht Slanica",
+      "Uvala Slanica –":
+    "Bucht Slanica –",
       "Otvori Google Maps": "Google Maps öffnen",
       "MORE I PLAŽE": "MEER UND STRÄNDE",
       "vaš kutak uz more": "Ihr Platz am Meer",
@@ -497,7 +576,25 @@
         "Genießen Sie das Meer, entdecken Sie regionale Spezialitäten und erkunden Sie die Orte, die diesem Teil Dalmatiens seinen besonderen Charakter verleihen.",
     "© 2026 Mobilna kućica Al Mare. Sva prava pridržana.":
     "© 2026 Mobilheim Al Mare. Alle Rechte vorbehalten.",
-      }
+      "Otkrijte Slanicu i druge uvale otoka, idealne za kupanje i opuštanje uz more.":
+    "Entdecken Sie die Bucht Slanica und weitere Buchten der Insel, ideal zum Schwimmen und Entspannen am Meer.",
+    "Istražite obalu, uživajte u plovidbi i upoznajte prirodne ljepote murterskog arhipelaga.":
+    "Erkunden Sie die Küste, genießen Sie Bootsausflüge und entdecken Sie die Naturschönheiten des Murter-Archipels.",
+    "Kušajte lokalne specijalitete, svježu ribu i mediteransku kuhinju u ugodnom otočnom ambijentu.":
+    "Probieren Sie lokale Spezialitäten, frischen Fisch und mediterrane Küche in angenehmer Inselatmosphäre.",
+  "MOBILNA KUĆICA · MURTER":
+    "MOBILHEIM · MURTER",
+    "Za prikaz interaktivne karte koristi se usluga Google Maps. Klikom na gumb „Otvori Google Maps” pristajete na učitavanje sadržaja s Googleovih poslužitelja, pri čemu se mogu obrađivati vaši osobni i tehnički podaci.":
+    "Google Maps wird zur Anzeige der interaktiven Karte verwendet. Durch Klicken auf die Schaltfläche „Google Maps öffnen“ stimmen Sie dem Laden von Inhalten von den Google-Servern zu, wobei Ihre personenbezogenen und technischen Daten verarbeitet werden können.",
+
+"Više informacija dostupno je u":
+    "Weitere Informationen finden Sie in",
+
+"Googleovim pravilima privatnosti":
+    "Googles Datenschutzerklärung",
+    "Kontaktirajte nas": "Kontaktieren Sie uns",
+
+  }
   };
 
   const originalText = new WeakMap();
